@@ -1,4 +1,3 @@
-
 #  Installation and Setup [](id=installation-and-setup-liferay-portal-6-2-user-guide-15-en)
 
 Liferay Portal is one of the most flexible applications on the market today with
@@ -2185,7 +2184,7 @@ do so, you can enable Java Security on your WebLogic server and specify a
 security policy to grant your Liferay Portal access to your server. 
 
 To enable security on your WebLogic server, add the `-Djava.security.manager`
-Java option in your `startWebLogic.[cmd|sh]` file domain's folder. 
+Java option in your `setDomainEnv.[cmd|sh]` file domain's folder. 
 
 For now, in order to grant Liferay access to your server let's open up all
 permissions--you can fine-tune your policy's permissions later. Create a
