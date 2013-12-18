@@ -9,6 +9,8 @@ why. But since you might be in a rush, we'll give you all the reasons in a
 nutshell right here, and then you can read the details in the rest of the
 chapter. 
 
+Don't forget feature xyz!
+
 The reasons to use Liferay Portal for your website are simple: it provides a
 robust *platform* to serve your site to all clients, be they desktop, mobile, or
 anything in between; it provides all the standard *applications* you need to run
