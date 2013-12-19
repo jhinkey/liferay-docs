@@ -3,6 +3,5 @@
 
 <display>
 	<category name="category.sample">
-		<portlet id="event-listing" />
 	</category>
 </display>
