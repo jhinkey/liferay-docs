@@ -4,5 +4,6 @@
 <display>
 	<category name="category.sample">
 		<portlet id="eventlisting"></portlet>
+		<portlet id="locationlisting"></portlet>
 	</category>
 </display>
