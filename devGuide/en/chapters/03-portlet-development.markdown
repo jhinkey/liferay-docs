@@ -12,6 +12,7 @@ develop portlet projects to top your Liferay pizza in such a way that the
 end-user won't be able to tell the difference between your custom portlet and our
 core portlets.
 
+
 In the last chapter we showed you how to create Liferay plugin projects, and if
 you followed along with our exercises, you now have a project to hold Liferay
 portlets. Unfortunately we don't really have any portlets in there yet. So
