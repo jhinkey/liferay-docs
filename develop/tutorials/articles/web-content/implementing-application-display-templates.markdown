@@ -1,3 +1,5 @@
+Categories: Web Content
+
 # Implementing Application Display Templates
 
 <!-- You can test this tutorial using the following portlet project 
