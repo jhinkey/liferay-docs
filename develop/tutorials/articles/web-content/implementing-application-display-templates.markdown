@@ -1,4 +1,4 @@
-Categories: Web Content
+Title: Web Content
 
 # Implementing Application Display Templates
 
