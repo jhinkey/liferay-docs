@@ -426,40 +426,42 @@ Liferay, a question arises: how do you know these applications are doing what
 they're advertised to do? There is a vetting process that they go through
 before they're allowed on Marketplace, but if the source code is not provided,
 there's no way for even Liferay to know if an app has been properly
-represented. For this reason, Liferay Portal implements a security feature
-known as the Portal Access Control List, or PACL.
+represented. For this reason, Liferay Portal comes with a security manager.
 
-PACL forces an application to declare up front the functions from Liferay's
-APIs that it calls. Anything that's not declared is not allowed to run. It's
-similar to what you might see on your mobile phone when you install an app: you
-get to see the Liferay API functions the app uses, and then you can decide if
-you want to install that app based on the permissions it requires. This way,
-you see right away what portal data that app can access and the app can do
-nothing else: you're protected--if you have PACL enabled. So if you plan to use
-apps downloaded from Marketplace, it's important to make sure PACL is enabled.
+Liferay's security manager forces an application to declare up front the
+functions from Liferay's APIs that it calls. Anything that's not declared is not
+allowed to run. It's similar to what you might see on your mobile phone when you
+install an app: you get to see the Liferay API functions the app uses, and then
+you can decide if you want to install that app based on the permissions it
+requires. This way, you see right away what portal data that app can access and
+the app can do nothing else: you're protected--if you have Liferay's security
+manager enabled. So if you plan to use apps downloaded from Marketplace, it's
+important to make sure Liferay's security manager is enabled.
 
-By default, Liferay's bundles have PACL turned off. The reason for this is that
-there is a small performance penalty for having PACL enabled. Since the only
-reason to have PACL enabled is to install untrusted third party apps from
-Marketplace (and not everybody does that), we decided to leave PACL turned off
-by default. This way, your portal performs as fast as possible.
+By default, Liferay's bundles use the security manager that's configured for the
+application server. If none is configured, an app's declared permissions are not
+checked. There is a small performance penalty for having a security manager
+enabled. Since the only reason to enable one is to install untrusted third party
+apps from Marketplace (and not everybody does that), we decided to leave
+Liferay's security manager turned off by default. This way, your portal performs
+as fast as possible.
 
-The bottom is line that if you intend to use Marketplace apps, you should
-enable PACL. We provide manually installation documentation for all the app
-servers supported by Liferay. Each of those sections has a subsection that
-explains how to enable Java security for that app server, which is a
-prerequisite for enabling PACL. Once you have Java security enabled, PACL can
-be enabled by adding one line to your `portal-ext.properties` or
-`portal-setup-wizard.properties` file:
+The bottom is line that if you intend to use Marketplace apps, you should enable
+Liferay's security manager. We provide manually installation documentation for
+all the app servers supported by Liferay. Each of those sections has a
+subsection that explains how to enable Java security for that app server, which
+is a prerequisite for enabling PACL. Once you have Java security enabled,
+Liferay's security manager can be enabled by adding one line to your
+`portal-ext.properties` or `portal-setup-wizard.properties` file:
 
     portal.security.manager.strategy=liferay
 
 Save the file. If Liferay is running, restart it. Your portal is now configured
-to check PACL-enabled Marketplace apps against their declared permissions.
+to check Marketplace apps against their declared permissions.
 
 Please note that if you installed @product@ manually, there may be further
-configuration you need to do to enable PACL. Please check the relevant
-installation instructions for your app server for further information. 
+configuration you need to do to enable Java security. Please check the relevant
+installation instructions for your app server for further information.
 
 Congratulations! Liferay is now installed and ready for production. 
 
