@@ -75,10 +75,10 @@ index into a database (not recommended; see the
 article for information on using Cluster Link or Solr), you should back up that
 database too. 
 
-Search indexes can be backed up as well, if you wish to avoid re-indexing your
-content after restoring your database. This is easiest to do if you have a
-separate Elastic or Solr environment on which your index is stored. If you're in
-a clustered configuration and you're replicating indexes, you'll need to back up
+If you wish to avoid re-indexing your content after restoring your database,
+back up your search indexes. This is easiest to do if you have a separate
+Elastic or Solr environment on which your index is stored. If you're in a
+clustered configuration and you're replicating indexes, you'll need to back up
 each index replica.
 
 Restoring your application server, your Liferay Home folder, the locations of
