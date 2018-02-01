@@ -27,7 +27,7 @@ Upgrade each Marketplace app (Kaleo, Calendar, Notifications, etc.) that you're
 using to its latest version for your installation. Before proceeding with the
 upgrade, troubleshoot any issues regarding these apps. 
 
-## Step 2: Remove Duplicate Web Content Structure Field Names](id=step-2-remove-duplicate-field-names-in-web-content-structures)
+## Step 2: Remove Duplicate Web Content Structure Field Names [](id=step-2-remove-duplicate-web-content-structure-field-namesidstep-2-remove-du)
 
 If you've used Web Content Management extensively, you might have structures
 whose field names aren't unique. You must 
@@ -90,6 +90,10 @@ Here's a list of the 6.2 properties that have changed in 7.0:
     discussion.max.comments=0
     dl.file.entry.thumbnail.max.height=128
     dl.file.entry.thumbnail.max.width=128
+
+Properties in features that have been modularized have changed and must now be
+deployed separately in
+[OSGi configuration files](/discover/portal/-/knowledge_base/7-0/system-settings#exporting-and-importing-configurations). 
 
 Here are links to the 7.0 and 7.1 portal properties reference docs:
 
