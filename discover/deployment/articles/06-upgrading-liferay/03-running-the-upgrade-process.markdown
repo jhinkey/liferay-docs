@@ -81,10 +81,10 @@ Here are all the upgrade tool command line options:
 **--shell** or **-s**: Automatically connects you to the Gogo shell after
 finishing the upgrade process.
 
-### Configuring the Upgrade [](id=configuring-the-upgrade)
+### Configuring the Upgrade [](id=configuring-the-core-upgrade)
 
-The upgrade process requires configuration. You can configure it at runtime via
-the command line interface or pre-configure it in these files:
+The core upgrade requires configuration. You can configure it at runtime via the
+command line interface or pre-configure it in these files:
 
 -   `app-server.properties`: Specifies the server's location and libraries.
 -   `portal-upgrade-database.properties`: Configures the database connection.
@@ -200,11 +200,18 @@ upgrade-related commands.
 
 ## Gogo shell commands for module upgrades [](id=gogo-shell-commands-for-module-upgrades)
 
-Once you've [configured your upgrade](#configuring-the-upgrade), you can use the
-Gogo shell to upgrade modules, check module status, or execute verify processes.
+@product@'s Gogo shell commands let you upgrade modules, check module status, or
+execute verify processes.
+
++$$$
+
+**Note**: [Configuring the core upgrade](#configuring-the-core-upgrade)
+is required before using Gogo shell commands to upgrade the core. 
+
+$$$
 
 If you ran the upgrade tool and it opened Gogo shell, you're already connected.
-Otherwise, you can use telnet to connect to Gogo shell:
+Otherwise, you can connect to Gogo shell via telnet:
 
 `telnet localhost 11311`
 
