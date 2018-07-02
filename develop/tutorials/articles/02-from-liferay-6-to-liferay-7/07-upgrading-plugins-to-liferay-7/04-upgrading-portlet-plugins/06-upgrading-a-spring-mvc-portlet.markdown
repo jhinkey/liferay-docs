@@ -132,14 +132,16 @@ $$$
 To import class packages referenced by your portlet's descriptor files, add the
 packages to an `Import-Package` header in the
 `liferay-plugin-package.properties` file. See 
-[Packaging a Spring MVC Portlet](/develop/tutorials/-/knowledge_base/7-1/spring-mvc#packaging-a-spring-mvc-portlet)
+[Deploying a Spring MVC Portlet](/develop/tutorials/-/knowledge_base/7-1/deploying-a-spring-mvc-portlet)
 for details.
 
 If you depend on a package from Java's `rt.jar` other than its `java.*`
 packages, override
 [portal property `org.osgi.framework.bootdelegation`](@platform-ref@/7.1-latest/propertiesdoc/portal.properties.html#Module%20Framework)
-and add it to the property's list. Go [here](/develop/tutorials/-/knowledge_base/7-1/resolving-classnotfoundexception-and-noclassdeffounderror-in-osgi-bundles#case-4-the-missing-class-belongs-to-a-java-runtime-package)
+and add it to the property's list. <!-- TODO uncomment when published Jim
+Go *here* /develop/tutorials/-/knowledge_base/7-1/resolving-classnotfoundexception-and-noclassdeffounderror-in-osgi-bundles#case-4-the-missing-class-belongs-to-a-java-runtime-package
 for details. 
+-->
 
 +$$$
 
@@ -150,7 +152,7 @@ by issue
 The last JAR that has properties files is the only JAR whose properties are
 added to the resulting WAB's classpath. Properties in other JARs aren't added.
 
-[Packaging a Spring MVC Portlet](/develop/tutorials/-/knowledge_base/7-1/spring-mvc#packaging-a-spring-mvc-portlet)
+[Deploying a Spring MVC Portlet](/develop/tutorials/-/knowledge_base/7-1/deploying-a-spring-mvc-portlet)
 explains how to add all the embedded JAR properties.
 
 $$$

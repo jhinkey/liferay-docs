@@ -31,9 +31,8 @@ freedom to implement the UI in any other technology.
 Because of this, you can use Liferay as a headless platform, because it's easy
 to create [web services](/develop/tutorials/-/knowledge_base/7-1/web-services)
 based on [Service Builder](/develop/tutorials/-/knowledge_base/7-1/service-builder-web-services),
-[JAX-RS, and JAX-WS](/develop/tutorials/-/knowledge_base/7-1/jax-ws-and-jax-rs).
-Then you can build standalone web applications using any front-end technology or
-mobile technology you like. 
+JAX-RS, and JAX-WS. Then you can build standalone web applications using any
+front-end technology or mobile technology you like. 
 
 ## Extensibility [](id=extensibility)
 
@@ -155,8 +154,8 @@ storing and sharing files trivial. Search is built into the system as well, and
 it is designed for you to integrate it with your applications. Many of the
 frameworks you might need when developing complex applications are already in
 Liferay; you just need to take advantage of them: a Social Networking API,
-user-generated forms with data lists, a [message bus](/develop/tutorials/-/knowledge_base/7-1/message-bus),
-an audit system, and much more.
+user-generated forms with data lists, a message bus, an audit system, and much
+more.
 
 ## Example Liferay Projects [](id=example-liferay-projects)
 

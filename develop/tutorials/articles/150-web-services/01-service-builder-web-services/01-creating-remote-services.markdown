@@ -303,8 +303,4 @@ invoke them. To learn how, see the tutorial
 
 [Invoking JSON Web Services](/develop/tutorials/-/knowledge_base/7-1/invoking-json-web-services)
 
-[JSON Web Services Invoker](/develop/tutorials/-/knowledge_base/7-1/json-web-services-invoker)
-
-[JSON Web Services Invocation Examples](/develop/tutorials/-/knowledge_base/7-1/json-web-services-invocation-examples)
-
 [What is Service Builder?](/develop/tutorials/-/knowledge_base/7-1/what-is-service-builder)

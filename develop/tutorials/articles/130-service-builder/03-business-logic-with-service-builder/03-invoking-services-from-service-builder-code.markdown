@@ -7,7 +7,7 @@ Spring Application Context file, Service Builder defines each entity's
 `*LocalServiceImpl`, `*ServiceImpl`, and `*PersistenceImpl` classes as Spring
 Beans. For example, Service Builder defines Spring Beans for the `Foo` entity in
 the
-[Liferay Blade Service Builder `basic-service` sample module's](/develop/reference/-/knowledge_base/7-1/service-builder-samples)
+[Liferay Blade Service Builder `basic-service` sample module's](/develop/reference/-/knowledge_base/7-0/service-builder-samples)
 `src/main/resources/META-INF/spring/module-spring.xml` file:
 
     <?xml version="1.0"?>
@@ -100,7 +100,7 @@ more robust and versatile.
 
 Fortunately, Service Builder generates this kind of code for every entity your
 `service.xml` file references. For example, the
-[Liferay Blade Service Builder sample project](/develop/reference/-/knowledge_base/7-1/service-builder-samples)
+[Liferay Blade Service Builder sample project](/develop/reference/-/knowledge_base/7-0/service-builder-samples)
 `basic-service` module's `service.xml` file defines a `Foo` entity that
 references an `AssetEntry` entity:
 
@@ -123,7 +123,5 @@ Bean in the Application Context of your Service Builder Spring Bean.
 [Invoking Local Services](/develop/tutorials/-/knowledge_base/7-1/invoking-local-services)
 
 [Invoking Remote Services](/develop/tutorials/-/knowledge_base/7-1/invoking-remote-services)
-
-[JSON Web Services Invoker](/develop/tutorials/-/knowledge_base/7-1/json-web-services-invoker)
 
 [Service Trackers](/develop/tutorials/-/knowledge_base/7-1/service-trackers)

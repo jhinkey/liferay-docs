@@ -36,10 +36,10 @@ versioned, you can specify precisely the modules you want to use.
 - **In-Context Descriptors** - Where plugins use descriptor files (e.g.,
 `web.xml`, `portlet.xml`, etc.) to describe classes, module classes use OSGi
 annotations to describe themselves. For example, a module portlet class can use
-[OSGi Service annotation properties](/develop/reference/-/knowledge_base/7-1/portlet-descriptor-to-osgi-service-property-map)
-to specify its name, display name, resource bundle, public render parameters,
-and much more. Instead of specifying that information in descriptor files
-separate from the code, you specify them in context in the code.
+OSGi Service annotation properties to specify its name, display name, resource
+bundle, public render parameters, and much more. Instead of specifying that
+information in descriptor files separate from the code, you specify them in
+context in the code.
 
 These are just a few ways modules outshine traditional plugins. Note, however,
 that developers experienced with Liferay plugins have the best of both worlds.

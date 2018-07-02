@@ -167,8 +167,6 @@ Congratulations! You've connected Service Builder to your external data source.
 
 ## Related Topics [](id=related-topics)
 
-[Connecting to JNDI Data Sources](/develop/tutorials/-/knowledge_base/7-1/connecting-to-data-sources-using-jndi)
-
 [Service Builder](/develop/tutorials/-/knowledge_base/7-1/service-builder)
 
 [Running Service Builder and Understanding the Generated Code](/develop/tutorials/-/knowledge_base/7-1/running-service-builder)

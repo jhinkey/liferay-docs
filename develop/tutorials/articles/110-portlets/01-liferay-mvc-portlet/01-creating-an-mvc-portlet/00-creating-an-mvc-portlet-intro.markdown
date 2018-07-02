@@ -98,9 +98,11 @@ includes these component properties in the portlet class it generates.
 Some of the properties might look familiar to you if you've developed Liferay
 MVC portlets for Liferay Portal 6.2. That's because they're the same as the XML
 attributes you used to specify in `liferay-portlet.xml`, `liferay-display.xml`,
-and `portlet.xml`. The 
-[mapping of portlet descriptors to OSGi properties](/develop/reference/-/knowledge_base/7-1/portlet-descriptor-to-osgi-service-property-map)
+and `portlet.xml`. <!-- TODO uncomment once published. Jim 
+The 
+mapping of portlet descriptors to OSGi properties* /develop/reference/-/knowledge_base/7-1/portlet-descriptor-to-osgi-service-property-map
 can you help find OSGi properties for descriptors you already know. 
+-->
 
 To keep compatibility with the JSR-168 and JSR-286 portlet specs, these DTDs
 define the Liferay-specific portlet attributes:

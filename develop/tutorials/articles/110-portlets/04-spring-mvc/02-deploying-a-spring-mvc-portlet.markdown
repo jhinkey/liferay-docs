@@ -34,9 +34,13 @@ module packages that aren't picked up automatically. Follow the instructions for
 If you depend on a package from Java's `rt.jar` other than a `java.*` package,
 override
 [portal property `org.osgi.framework.bootdelegation`](@platform-ref@/7.1-latest/propertiesdoc/portal.properties.html#Module%20Framework)
-and add it to the property's list. Go 
-[here](/develop/tutorials/-/knowledge_base/7-1/resolving-classnotfoundexception-and-noclassdeffounderror-in-osgi-bundles#case-4-the-missing-class-belongs-to-a-java-runtime-package)
+and add it to the property's list. 
+
+<!-- TODO uncomment when the article is published. Jim
+Go 
+here /develop/tutorials/-/knowledge_base/7-1/resolving-classnotfoundexception-and-noclassdeffounderror-in-osgi-bundles#case-4-the-missing-class-belongs-to-a-java-runtime-package
 for details. 
+-->
 
 +$$$
 

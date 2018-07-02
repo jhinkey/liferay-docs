@@ -6,7 +6,7 @@ implementations to be swapped out or removed entirely, and your module must not
 just survive but thrive in this environment. 
 
 If you 
-[call services](/develop/tutorials/-/knowledge_base/7-1/finding-and-invoking-liferay-services)
+[call services](/develop/tutorials/-/knowledge_base/7-1/osgi-services-and-dependency-injection-with-declarative-services)
 from `@Component` classes, it's easy: you just use another 
 [Declarative Services (DS)](https://osgi.org/specification/osgi.cmpn/7.0.0/service.component.html)
 annotation, `@Reference`, to get a service reference. The component activates
@@ -27,7 +27,7 @@ implement a Service Tracker to look up services in the service registry.
 configure the required `org.osgi.core` dependency carefully in your build file
 (e.g., `build.gradle`, `pom.xml`, etc.) to avoid errors. Since it's included in
 @product@ by default, it must be configured as `provided`. See the
-[Third Party Packages Portal Exports](/develop/reference/-/knowledge_base/7-1/third-party-packages-portal-exports)
+[Resolving Third Party Library Package Dependencies](/develop/reference/-/knowledge_base/7-1/adding-third-party-libraries-to-a-module)
 tutorial for more information.
 
 $$$

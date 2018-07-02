@@ -16,7 +16,7 @@ this feature can save you the work of duplicating work just to change the text.
 You can make any text of a fragment editable by enclosing it in an 
 `<lfr-editable>` tag like this:
     
-    <lfr-editable id=â€unique-idâ€ type="text">
+    <lfr-editable id=â€?unique-idâ€? type="text">
        This is editable text!    
     </lfr-editable>
  
@@ -109,7 +109,7 @@ Navigation Menu portlet is registered as `nav`. Each portlet which is registered
 has an `lfr-app-[name]` tag that's used to embed it. For example: the Navigation
 Menu tag is `<lfr-app-nav />`. You could embed it in a block like this:
 
-    <div class=â€nav-widgetâ€>
+    <div class=â€?nav-widgetâ€?>
         <lfr-app-nav />
     </div>
 
@@ -122,9 +122,9 @@ Implement this in your Fragment:
 
 4.  Insert the following code in the main `<div>` in the HTML pane:
     
-        <div class=â€container-fluidâ€>
-          <div class=â€rowâ€>
-            <div class=â€col-md-10â€>
+        <div class=â€?container-fluidâ€?>
+          <div class=â€?rowâ€?>
+            <div class=â€?col-md-10â€?>
                <lfr-widget-nav />
             </div>
           </div>

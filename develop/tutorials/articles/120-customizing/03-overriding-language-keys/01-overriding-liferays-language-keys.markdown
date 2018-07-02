@@ -162,9 +162,10 @@ $$$
 **Important**: If your module
 [uses language keys from another module](/develop/tutorials/-/knowledge_base/7-1/localizing-your-application#using-a-language-module)
 and
-[overrides any of that other module's keys](/develop/tutorials/-/knowledge_base/7-1/localizing-your-application#using-other-resource-bundles-in-addition-to-your-own),
-make sure to use OSGi headers to specify the capabilities your module requires
-and provides. This lets you prioritize resource bundles from the modules. 
+[overrides any of that other module's keys](/develop/tutorials/-/knowledge_base/7-1/overriding-a-modules-language-keys),
+make sure to use OSGi headers to
+specify the capabilities your module requires and provides. This lets you
+prioritize resource bundles from the modules. 
 
 To see your Liferay language key overrides in action,
 [deploy your module](/develop/tutorials/-/knowledge_base/7-1/starting-module-development#building-and-deploying-a-module)
@@ -176,7 +177,7 @@ That's all there is to overriding Liferay's language keys.
 
 ## Related Topics [](id=related-topics)
 
-[Resource Bundle Override Sample Project](/develop/reference/-/knowledge_base/7-1/resource-bundle-override)
+[Resource Bundle Override Sample Project](/develop/reference/-/knowledge_base/7-0/resource-bundle-override)
 
 [Upgrading Core Language Key Hooks](/develop/tutorials/-/knowledge_base/7-1/upgrading-core-language-key-hooks)
 

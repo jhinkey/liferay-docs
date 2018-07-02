@@ -99,13 +99,15 @@ including non-portlet and even non-Java clients. For information on how to
 develop client applications that can access Liferay's JSON web services, please
 see the
 [Invoking JSON Web Services](/develop/tutorials/-/knowledge_base/7-1/invoking-json-web-services)
-tutorial. For information on how to develop
+tutorial. <!-- TODO uncomment after they're published. Jim
+For information on how to develop
 client applications that access Liferay's SOAP web services, please see the
-[SOAP Web Services](/develop/tutorials/-/knowledge_base/7-1/soap-web-services)
+*SOAP Web Services* /develop/tutorials/-/knowledge_base/7-1/soap-web-services
 tutorial. To learn how to create remote web services for your own application,
 please refer to the
-[Creating Remote Services](/develop/tutorials/-/knowledge_base/7-1/creating-remote-services)
+*Creating Remote Services* /develop/tutorials/-/knowledge_base/7-1/creating-remote-services
 tutorial. 
+-->
 
 For more information on Liferay services, see the Liferay Portal CE Javadocs at
 [@platform-ref@/7.0-latest/javadocs/](@platform-ref@/7.1-latest/javadocs/).
@@ -113,11 +115,5 @@ For more information on Liferay services, see the Liferay Portal CE Javadocs at
 ## Related Topics [](id=related-topics)
 
 [Invoking JSON Web Services](/develop/tutorials/-/knowledge_base/7-1/invoking-json-web-services)
-
-[JSON Web Services Invoker](/develop/tutorials/-/knowledge_base/7-1/json-web-services-invoker)
-
-[JSON Web Services Invocation Examples](/develop/tutorials/-/knowledge_base/7-1/json-web-services-invocation-examples)
-
-[SOAP Web Services](/develop/tutorials/-/knowledge_base/7-1/soap-web-services)
 
 [Creating Remote Services](/develop/tutorials/-/knowledge_base/7-1/creating-remote-services)

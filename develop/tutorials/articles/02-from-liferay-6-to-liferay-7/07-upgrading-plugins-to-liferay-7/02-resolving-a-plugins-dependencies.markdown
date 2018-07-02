@@ -65,12 +65,14 @@ a specific purpose, such as providing the app's API, implementation, or UI. The
 app modules are therefore much easier to understand. Next, you'll track down the 
 modules that now hold the classes referenced by your plugin. 
 
+<!-- TODO uncomment when the reference article is published. Jim
 The reference article 
-[Classes Moved from `portal-service.jar`](/develop/reference/-/knowledge_base/7-1/classes-moved-from-portal-service-jar) 
+*Classes Moved from `portal-service.jar`* 
 contains a table that maps each class moved from `portal-service.jar` to its new 
 module. The table includes each class's new package and symbolic name 
 (artifact ID). You'll use this information to configure your plugin's 
 dependencies on these modules. 
+-->
 
 Your plugin might reference classes that are in Liferay utility modules formerly
 known as `util-java`, `util-bridges`, `util-taglib`, or `util-slf4j`. 
@@ -382,7 +384,5 @@ is a sure-fire way to verify existing module installations.
 [Modularizing an Existing Portlet](/develop/tutorials/-/knowledge_base/7-1/modularizing-an-existing-portlet)
 
 [Invoking Local Services](/develop/tutorials/-/knowledge_base/7-1/invoking-local-services)
-
-[Finding and Invoking Liferay Services](/develop/tutorials/-/knowledge_base/7-1/finding-and-invoking-liferay-services)
 
 [Tooling](/develop/tutorials/-/knowledge_base/7-1/tooling)

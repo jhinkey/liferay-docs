@@ -32,7 +32,6 @@ Application localization topics:
 -   [Where do I Put Language Files?](#where-do-i-put-language-files)
 -   [Creating a Language Module](#creating-a-language-module)
 -   [Using a Language Module](#using-a-language-module)
--   [Using Other Resource Bundles in Addition to Your Own](#using-other-resource-bundles-in-addition-to-your-own)
 -   [Using @product@'s Language Properties](#using-liferays-language-properties)
 
 ## What are Language Keys? [](id=what-are-language-keys)
@@ -227,7 +226,7 @@ modules.
 +$$$
 
 The
-[Shared Language Key sample project](/develop/reference/-/knowledge_base/7-1/shared-language-keys)
+[Shared Language Key sample project](/develop/reference/-/knowledge_base/7-0/shared-language-keys)
 is a working example that demonstrates aggregating resource bundles. You can
 deploy it in Gradle, Maven, and Liferay Workspace build environments. 
 

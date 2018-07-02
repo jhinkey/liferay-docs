@@ -246,7 +246,7 @@ to provide the classes imported above.
  **Important**: If your module
  [uses language keys from another module](/develop/tutorials/-/knowledge_base/7-1/localizing-your-application#using-a-language-module)
  and
- [overrides any of that other module's keys](/develop/tutorials/-/knowledge_base/7-1/localizing-your-application#using-other-resource-bundles-in-addition-to-your-own),
+ overrides any of that other module's keys,
  make sure to use OSGi headers to specify the capabilities your module requires
  and provides. This lets you prioritize resource bundles from the modules. 
 
@@ -262,7 +262,7 @@ too.
 
 ## Related Topics [](id=related-topics)
 
-[Resource Bundle Override Sample Project](/develop/reference/-/knowledge_base/7-1/resource-bundle-override)
+[Resource Bundle Override Sample Project](/develop/reference/-/knowledge_base/7-0/resource-bundle-override)
 
 [Upgrading Core Language Key Hooks](/develop/tutorials/-/knowledge_base/7-1/upgrading-core-language-key-hooks)
 

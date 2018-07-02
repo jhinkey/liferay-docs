@@ -132,7 +132,7 @@ Follow these upgrade and optimization phases:
  Portlet - JSF | [Upgrading a Liferay JSF Portlet](/develop/tutorials/-/knowledge_base/7-1/upgrading-a-liferay-jsf-portlet) | None |
  Portlet - Servlet/JSP | [Upgrading a Servlet-based Portlet](/develop/tutorials/-/knowledge_base/7-1/upgrading-a-servlet-based-portlet) | Coming soon |
  Portlet - Spring MVC | [Upgrading a Spring MVC Portlet](/develop/tutorials/-/knowledge_base/7-1/upgrading-a-spring-mvc-portlet) | None |
- Portlet - Struts 1 | [Upgrading a Struts Portlet](/develop/tutorials/-/knowledge_base/7-1/upgrading-a-struts-portlet) | None |
+ Portlet - Struts 1 | Coming soon | None |
  Theme | 1. [Adapt code to API](/develop/tutorials/-/knowledge_base/7-1/adapting-to-liferay-7s-api-with-the-code-upgrade-tool)<br>2. [Resolve dependencies](/develop/tutorials/-/knowledge_base/7-1/resolving-a-plugins-dependencies)<br>3. [Upgrade Theme](/develop/tutorials/-/knowledge_base/7-1/upgrading-themes) | - [Migrate to Liferay Theme Generator](/develop/tutorials/-/knowledge_base/7-1/migrating-a-6-2-theme-to-liferay-7) (Node.js/Gulp/Yeoman)<br>- [Use Themelets](/develop/tutorials/-/knowledge_base/7-1/creating-reusable-pieces-of-code-for-your-themes) |
  Web plugin | 1. [Adapt code to API](/develop/tutorials/-/knowledge_base/7-1/adapting-to-liferay-7s-api-with-the-code-upgrade-tool)<br>2. [Resolve dependencies](/develop/tutorials/-/knowledge_base/7-1/resolving-a-plugins-dependencies) | [Convert to OSGi module](/develop/tutorials/-/knowledge_base/7-1/modularizing-an-existing-portlet), e.g., `portlet-x-web` | 
 
@@ -140,12 +140,12 @@ Follow these upgrade and optimization phases:
 
  Feature | Upgrade path | Optimizations (optional) |
  :----------------- | :----------- | :----------------------- |
- JNDI data source | [Use @product@'s classloader to access the app server's JNDI API](/develop/tutorials/-/knowledge_base/7-1/connecting-to-data-sources-using-jndi) | None |
+ JNDI data source | Use @product@'s classloader to access the app server's JNDI API | None |
  Resources Importer | [Update the Resources Importer](/develop/tutorials/-/knowledge_base/7-1/upgrading-themes#updating-the-resources-importer) | None |
- Services - Invoke a service from @product@ Core or another portlet or module | [Implement a Service Tracker](/develop/tutorials/-/knowledge_base/7-1/service-trackers) | [Invoke Liferay services from a module](/develop/tutorials/-/knowledge_base/7-1/finding-and-invoking-liferay-services) |
+ Services - Invoke a service from @product@ Core or another portlet or module | [Implement a Service Tracker](/develop/tutorials/-/knowledge_base/7-1/service-trackers) | [Invoke OSGi services]/develop/tutorials/-/knowledge_base/7-1/osgi-services-and-dependency-injection-with-declarative-services) |
  Services - Module dependency | Copy `x-service.jar` to `WEB-INF/lib` | - [Migrate to Gradle/Maven](/develop/tutorials/-/knowledge_base/7-1/migrating-traditional-plugins-to-workspace-web-applications) and [add dependency](/develop/tutorials/-/knowledge_base/7-1/configuring-dependencies) on the OSGi service |
  Services - Service Builder | [Upgrading Portlets that use Service Builder](/develop/tutorials/-/knowledge_base/7-1/upgrading-portlets-that-use-service-builder) | [Convert to OSGi modules](/develop/tutorials/-/knowledge_base/7-1/modularizing-an-existing-portlet), e.g., `x-api` and `x-service` |
- Services - Web services | 1. [Adapt code to API](/develop/tutorials/-/knowledge_base/7-1/adapting-to-liferay-7s-api-with-the-code-upgrade-tool)<br>2. [Resolve dependencies](/develop/tutorials/-/knowledge_base/7-1/resolving-a-plugins-dependencies) | [Use a Service Builder service with JAX-RS with a REST service in front](/develop/tutorials/-/knowledge_base/7-1/jax-ws-and-jax-rs) |
+ Services - Web services | 1. [Adapt code to API](/develop/tutorials/-/knowledge_base/7-1/adapting-to-liferay-7s-api-with-the-code-upgrade-tool)<br>2. [Resolve dependencies](/develop/tutorials/-/knowledge_base/7-1/resolving-a-plugins-dependencies) | [Use a Service Builder service with JAX-RS with a REST service in front](/develop/tutorials/-/knowledge_base/7-1/web-services) |
  Template - FreeMarker | - [Adapt code to API](/develop/tutorials/-/knowledge_base/7-1/adapting-to-liferay-7s-api-with-the-code-upgrade-tool)<br>- [Adapt Theme templates](/develop/tutorials/-/knowledge_base/7-1/upgrading-themes#updating-theme-templates) | None |
  Template - Velocity (deprecated) | [Adapt code to API](/develop/tutorials/-/knowledge_base/7-1/adapting-to-liferay-7s-api-with-the-code-upgrade-tool) | [Convert to FreeMarker](/develop/tutorials/-/knowledge_base/7-1/upgrading-themes#updating-theme-templates) |
 
