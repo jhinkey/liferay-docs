@@ -31,6 +31,16 @@ an embedded JAR in the `WEB-INF/lib` folder. Packages that aren't found in
 either location are added to an `Import-Package` header in the WAB's
 `META-INF/MANIFEST.MF` file. 
 
++$$$
+
+**Note:** If your plugin should be started before @product@ starts accepting 
+requests, specify this property setting in the plugin's
+`WEB-INF/liferay-plugin-package.properties` file:
+
+    required-for-startup=true
+
+$$$
+
 To import a package that is only referenced in the following types of locations,
 you must add an `Import-Package` OSGi header to the plugin's
 `WEB-INF/liferay-plugin-package.properties` file and add the package to the
