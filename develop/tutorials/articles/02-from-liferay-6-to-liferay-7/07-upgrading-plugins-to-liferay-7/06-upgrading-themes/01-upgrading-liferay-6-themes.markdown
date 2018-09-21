@@ -46,6 +46,12 @@ Make sure these settings are present in your theme:
 
         liferay-versions=6.2+
 
+    If your theme should be started before @product@ starts accepting requests,
+    specify this property setting in the theme's
+    `WEB-INF/liferay-plugin-package.properties` file:
+
+        required-for-startup=true
+
 +$$$
 
 **Note:** Because Liferay Theme Generator doesn't officially support importing 

@@ -644,6 +644,11 @@ file:
     following class name:
 
         com.liferay.portal.kernel.model.Group
+3.  If your theme should be started before @product@ starts accepting requests,
+    specify this property setting in the theme's
+    `WEB-INF/liferay-plugin-package.properties` file:
+
+        required-for-startup=true
 
 Now that the resources importer's properties are configured properly, you can
 update your theme's web content.
