@@ -132,12 +132,20 @@ If you are upgrading from a previous release of Liferay Portal or if you need to
 migrate your data from one system to another, the Data Migration tab helps you
 to do that without your developers having to write custom scripts.
 
-The first section lets you copy your entire Liferay database from the current
-database under which it is running to the database you specify in this set of
-fields. You'll need to enter the driver class name (and the driver will need to
-be on Liferay's classpath), the JDBC URL of the database to which you'll be
-copying your data and the credentials of a user with access to that database.
-Once you have all of this information entered, click *Execute* to copy the data.
+The first section lets you migrate Service Builder entities *only* from the
+embedded @product@ HSQL database to a database type other than HSQL. You must
+the target database JDBC driver in the classpath and specify the target database
+user credentials. This database migration feature was provided as a convenience
+only. To properly migrate your @product@ data from its current database (no
+matter the database vendor) to a new database vendor or database version, use
+your target database vendor's tools. 
+
++$$$
+
+**Important:** Use the target database vendor's tools to properly migrate data 
+from one database to another. 
+
+$$$
 
 The next section helps you migrate your documents. If you want to move off of
 the Jackrabbit JSR-170 repository to the file system, or to the Jackrabbit
