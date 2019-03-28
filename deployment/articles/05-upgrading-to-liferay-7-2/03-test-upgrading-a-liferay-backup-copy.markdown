@@ -216,11 +216,13 @@ Upgrade the database to @product-ver@ (see
 then return here. 
 
 If the upgrade took too long, search the upgrade log to identify more unused
-objects. Then start back at Step 1 with a fresh copy of the production database. 
+objects. Then restart these steps with a fresh copy of the production database. 
 
-## Step 9: Test the upgraded portal and resolve any issues 
+## Step 9: Test the Upgraded Portal and Resolve Any Issues 
 
-Test this upgraded @product-ver@ instance and resolve any issues. If you can't resolve an issue, start back at Step 1 with a fresh copy of the production database. 
+Test this upgraded @product-ver@ instance and resolve any issues. If you can't
+resolve an issue, restart these steps with a fresh copy of the production
+database. 
 
 ## Checkpoint: You've pruned and upgraded a production database copy 
 

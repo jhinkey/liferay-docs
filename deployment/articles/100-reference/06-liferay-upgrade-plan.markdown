@@ -8,72 +8,73 @@ Here are the steps for upgrading Liferay and your custom plugins to @product-ver
 ## Upgrade Steps
 
 <ol type="I">
-  <li><a href="/deployment/deployment/-/knowledge_base/6-2/upgrading-liferay">If you're on Liferay Portal 6.0.x, upgrade to Liferay Portal 6.2. If you're on Liferay Portal 6.1.x, upgrade to @product@ 7.1.</a></li>
-  <li><a href="/deployment/docs/upgrading-to-product-ver">Upgrade your @product@ database and configuration.</a>Note, step <em>D. Prepare a new @product@ production server</em> can be done in parallel with steps <em>A. through C.</em></li>
+  <li>If you're on Liferay Portal 6.0.x, <a href="/docs/6-2/deploy/-/knowledge_base/deploy/upgrading-liferay">upgrade to Liferay Portal 6.2</a>. If you're on Liferay Portal 6.1.x, <a href="/docs/7-1/deploy/-/knowledge_base/deploy/upgrading-to-liferay-71">upgrade to @product@ 7.1.</a></li>
+  <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-to-product-ver">Upgrade your @product@ database and configuration.</a>Note, Preparing a new @product@ production server can be done in parallel with steps <em>A. through C.</em></li>
   <ol type="A">
-    <li><a href="/deployment/docs/planning-for-deprecated-applications">Examine the deprecated applications: Remove unwanted applications from production and note ones to modify after upgrading to @product-ver@</a></li>
-    <li><a href="/deployment/docs/test-upgrading-a-product-backup-copy">Test upgrading a database copy</a></li>
+    <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/planning-for-deprecated-applications">Examine the deprecated applications: Remove unwanted applications from production and note ones to modify after upgrading to @product-ver@.</a></li>
+    <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy">Test upgrading a database copy.</a></li>
     <ol type="1">
-      <li>Copy the production database and save the copy logs.</li>
-      <li>Copy the production installation to a test server and configure it to use the database copy.</li>
-      <li>Check the @product@ UI and database copy logs for unused objects (sites, users, pages, etc.)</li>
-      <li>Use the script console or UI to remove the noted unused objects</li>
-      <li>Test @product@ with its pruned database</li>
-      <li>Install @product-ver@ on a test server and configure it to use the database copy</li>
-      <li>Upgrade the database to @product-ver@ (see step <em>E. Upgrade the @product@ data</em>); then return here</li>
-      <li>If the upgrade took too long, search the upgrade log to identify more unused objects. Then start back at step <em>1.</em> with a fresh copy of the production database.</li>
-      <li>Test this upgraded portal and resolve any issues</li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy#copy-the-production-installation-to-a-test server">Copy the Production Installation to a Test Server.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy#Copy-the-Production-Backup-to-the-Test-Database">Copy the Production Backup to the Test Database and Save the Logs.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy#remove-duplicate-web-content-structure-field-names">Remove Duplicate Web Content Structure Field Names.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy#Find-and-Remove-Unused-Objects">Find and Remove Unused Objects.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy#Test-product-with-its-Pruned-Database-Copy">Test @product@ with its Pruned Database Copy.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy#Install-@product-ver@-on-a-Test-Server-and-Configure-it-to-Use-the-Pruned-Database">Install @product-ver@ on a Test Server and Configure it to Use the Pruned Database.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy#Tune-Your-Database-for-the-Upgrade">Tune Your Database for the Upgrade.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-the-product-data">Upgrade the database to @product-ver@ (see step <em>E. Upgrade the @product@ data</em>); then return here.</a></li>
+      <li>If the upgrade took too long, search the upgrade log to identify more unused objects. Then restart these steps with a fresh copy of the production database.</li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/test-upgrading-a-product-backup-copy#Test-the-Upgraded-Portal-and-Resolve-Any-Issues">Test the Upgraded Portal and Resolve Any Issues.</a></li>
       <li>Checkpoint: Noted all unused objects and how to remove them</li>
     </ol>
-    <li><a href="/deployment/docs/preparing-to-upgrade-the-product-database">Prepare to upgrade the production database</a></li>
+    <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/preparing-to-upgrade-the-product-database">Prepare to upgrade the production database.</a></li>
     <ol type="1">
-      <li>Remove all noted unused objects</li>
-      <li>Test @product@ with its pruned database</li>
-      <li>Upgrade your Marketplace apps</li>
-      <li>Publish all staged changes to production</li>
-      <li>Synchronize a complete @product@ backup, including your pruned production database</li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/BAR">Remove all noted unused objects.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/BAR">Test @product@ with its pruned database.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/BAR">Upgrade your Marketplace apps.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/BAR">Publish all staged changes to production.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/BAR">Synchronize a complete @product@ backup, including your pruned production database.</a></li>
       <li>Checkpoint: Ready to upgrade the production database</li>
     </ol>
-    <li><a href="/deployment/docs/preparing-a-new-product-server-for-data-upgrade">Prepare a new @product@ server for data upgrade</a></li>
+    <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/preparing-a-new-product-server-for-data-upgrade">Prepare a new @product@ server for data upgrade.</a></li>
     <ol type="1">
-      <li>Install @product-ver@</li>
-      <li>Install the latest fix pack (DXP only)</li>
-      <li>Migrate your OSGi configurations (@product@ 7.0+)</li>
-      <li>Migrate your portal properties</li>
+      <li><a href="/FOO/BAR">Install @product-ver@.</a></li>
+      <li><a href="/FOO/BAR">Install the latest fix pack. (DXP only)</a></li>
+      <li><a href="/FOO/BAR">Migrate your OSGi configurations. (@product@ 7.0+)</a></li>
+      <li><a href="/FOO/BAR">Migrate your portal properties.</a></li>
       <ol type="a">
-        <li>Update your portal properties</li>
-        <li>Convert applicable properties to OSGi configurations</li>
+        <li><a href="/FOO/BAR">Update your portal properties.</a></li>
+        <li><a href="/FOO/BAR">Convert applicable properties to OSGi configurations.</a></li>
       </ol>
-      <li>Configure your Documents and Media file store</li>
-      <li>Disable indexing</li>
+      <li><a href="/FOO/BAR">Configure your Documents and Media file store.</a></li>
+      <li><a href="/FOO/BAR">Disable indexing.</a></li>
       <li>Checkpoint: Prepared the new @product@ production server</li>
     </ol>
-    <li><a href="/deployment/docs/upgrading-the-product-data">Upgrade the @product@ data</a></li>
+    <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-the-product-data">Upgrade the @product@ data.</a></li>
     <ol type="1">
-      <li><a href="/deployment/docs/tuning-your-database-for-the-upgrade">Tune your database for the upgrade</a></li>
-      <li><a href="/deployment/docs/configuring-the-data-upgrade">Configure the data upgrade</a></li>
-      <li><a href="/deployment/docs/upgrading-the-core-using-the-upgrade-tool">Upgrade the core</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/tuning-your-database-for-the-upgrade">Tune your database for the upgrade.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/configuring-the-data-upgrade">Configure the data upgrade.</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-the-core-using-the-upgrade-tool">Upgrade the core.</a></li>
       <ol type="a">
-        <li>Run the data upgrade tool</li>
-        <li>Resolve any core upgrade issues</li>
-        <li>If the issues were with upgrades to @product@ 7.0 or lower, restore the pruned production database backup</li>
-        <li>Upgrade your resolved issues (step <em>a</em>); continue if there were no issues</li>
+        <li><a href="/FOO/BAR">Run the data upgrade tool.</a></li>
+        <li><a href="/FOO/BAR">Resolve any core upgrade issues.</a></li>
+        <li><a href="/FOO/BAR">If the issues were with upgrades to @product@ 7.0 or lower, restore the pruned production database backup.</a></li>
+        <li><a href="/FOO/BAR">Upgrade your resolved issues (step <em>a</em>); continue if there were no issues.</a></li>
       </ol>
-      <li><a href="/deployment/docs/upgrading-modules-using-gogo-shell">Upgrade the @product@ modules, if you didn't upgrade them automatically with the core</a></li>
+      <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-modules-using-gogo-shell">Upgrade the @product@ modules, if you didn't upgrade them automatically with the core.</a></li>
       <ol type="a">
-        <li>Upgrade modules that are ready for upgrade</li>
-        <li>Verify upgraded modules</li>
-        <li>Resolve any module upgrade issues</li>
-        <li>Upgrade your resolved module issues (step <em>a</em>); continue if there were no issues</li>
+        <li><a href="/FOO/BAR">Upgrade modules that are ready for upgrade.</a></li>
+        <li><a href="/FOO/BAR">Verify upgraded modules.</a></li>
+        <li><a href="/FOO/BAR">Resolve any module upgrade issues.</a></li>
+        <li><a href="/FOO/BAR">Upgrade your resolved module issues (step <em>a</em>); continue if there were no issues.</a></li>
       </ol>
       <li>Checkpoint: Completed upgrading the database</li>
     </ol>
-    <li><a href="/deployment/docs/executing-post-upgrade-tasks">Execute post-upgrade Tasks</a></li>
+    <li><a href="/docs/7-2/deploy/-/knowledge_base/deploy/executing-post-upgrade-tasks">Execute post-upgrade Tasks.</a></li>
     <ol type="1">
-      <li>Remove the database tunning made for the upgrade process</li>
-      <li>Re-enable and re-index the search indexes</li>
-      <li>Update web content permissions (@product@ 7.0 and lower)</li>
-      <li>Address deprecated apps</li>
+      <li><a href="/FOO/BAR">Remove the database tunning made for the upgrade process.</a></li>
+      <li><a href="/FOO/BAR">Re-enable and re-index the search indexes.</a></li>
+      <li><a href="/FOO/BAR">Update web content permissions. (@product@ 7.0 and lower)</a></li>
+      <li><a href="/FOO/BAR">Address deprecated apps.</a></li>
       <li>Checkpoint: Completed post-upgrade tasks</li>
     </ol>
   </ol>
