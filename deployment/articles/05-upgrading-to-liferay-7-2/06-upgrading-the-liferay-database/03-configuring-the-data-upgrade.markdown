@@ -113,6 +113,17 @@ Specify the following information to configure the upgrade itself:
 
 **liferay.home:** the [Liferay home folder](/deployment/reference/-/knowledge_base/7-2/liferay-home) *(required)*
 
+**dl.store.impl:** the implementation for persisting documents to the document
+library store. This property is mandatory if you're using a `*FileSystemStore`
+implementation. If you
+[updated this property in your `portal-ext.properties`](/discover/deployment/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade),
+copy it here. Otherwise, set the property one of these ways:
+
+    dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
+    dl.store.impl=com.liferay.portal.store.db.DBStore
+    dl.store.impl=com.liferay.portal.store.file.system.AdvancedFileSystemStore
+    dl.store.impl=com.liferay.portal.store.s3.S3Store
+
 **hibernate.jdbc.batch_size:** the JDBC batch size used to improve performance;
 set to *250* by default *(optional)* 
 
@@ -168,6 +179,7 @@ into `[Liferay Home]/tools/portal-tools-db-upgrade-client/`:
     ```properties
     liferay.home=/home/user/servers/liferay7
     module.framework.base.dir=/home/user/servers/liferay7/osgi
+    dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
     ```
 
 It's time to set whether the upgrade tool should upgrade non-core modules
