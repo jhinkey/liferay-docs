@@ -18,13 +18,13 @@ production server continues running while you configure a new server to host
 
 Get the latest fixes for @product-ver@ by requesting an upgrade patch. 
 
-## Step 1: Request an Upgrade Patch from Liferay Support (Liferay DXP only)
+## Request an Upgrade Patch from Liferay Support (Liferay DXP only)
 
 An *upgrade patch* contains the latest fix pack and hot fixes planned for the
 next service pack. Upgrade patches provide the latest fixes available for your
 data upgrade. 
 
-## Step 2: Install @product-ver@ 
+## Install @product-ver@ 
 
 [Install @product@ on your application server](/deployment/docs/-/knowledge_base/7-2/deploying-product)
 or
@@ -33,19 +33,19 @@ or
 | **Important:** Do not start your application server. It's not ready to start 
 | until after the @product@ database upgrade. 
 
-## Step 3: Install the Latest Upgrade Patch or Fix Pack (Liferay DXP only)
+## Install the Latest Upgrade Patch or Fix Pack (Liferay DXP only)
 
 Install the upgrade patch (if you requested it from Liferay Support) or the 
 [latest Fix Pack](/deployment/docs/-/knowledge_base/7-2/patching-product). 
 
-## Step 4: Migrate Your OSGi Configurations (@product@ 7.0+)
+## Migrate Your OSGi Configurations (@product@ 7.0+)
 
 Copy your
 [OSGi configuration files](/user/-/knowledge_base/7-2/understanding-system-configuration-files)
 (i.e., `.config` files) to your new server's `[Liferay Home]/osgi/configs`
 folder. 
 
-## Step 5: Migrate Your Portal Properties 
+## Migrate Your Portal Properties 
 
 It is likely that you have overridden portal properties to customize your
 installation to your requirements. If so, you must update the properties files
@@ -118,7 +118,7 @@ deployed separately in
 | [export a screen's configuration](/user/-/knowledge_base/7-2/system-settings#exporting-and-importing-configurations)
 | to a `.config` file. 
 
-## Step 6: Configure Your Documents and Media File Store 
+## Configure Your Documents and Media File Store 
 
 General document store configuration (e.g., `dl.store.impl=[File Store Impl
 Class]`) continues to be done using `portal-ext.properties`. But here's what's
@@ -171,7 +171,7 @@ The
 [Document Repository Configuration](/deployment/docs/-/knowledge_base/7-2/document-repository-configuration)
 provides more document store configuration details. 
 
-## Step 7: Disable Indexing
+## Disable Indexing
 
 Before starting the upgrade process in your new installation, you must disable
 indexing to prevent upgrade process performance issues that arise when the

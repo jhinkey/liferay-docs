@@ -20,13 +20,13 @@ database.
 | [preparing a new @product@ server](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade)
 | can be done in parallel to save time. 
 
-## Step 1: Copy the Production Installation to a Test Server
+## Copy the Production Installation to a Test Server
 
 Prepare a test server to use a copy of your production installation. Your test
 server will use the same Liferay version you're using on production. Configure
 your server to use a new empty database for testing data upgrades. 
 
-## Step 2: Copy the Production Backup to the Test Database
+## Copy the Production Backup to the Test Database
 
 Import data from your
 [production database backup](/discover/deployment/-/knowledge_base/7-1/backing-up-a-product-installation)
@@ -35,7 +35,7 @@ to the new empty database.
 | **Important:** Make sure to save the data import log---you'll examine it in
 | the next steps. 
 
-## Step 3: Remove Duplicate Web Content Structure Field Names [](id=remove-duplicate-web-content-structure-field-names)
+## Remove Duplicate Web Content Structure Field Names [](id=remove-duplicate-web-content-structure-field-names)
 
 If you've used Web Content Management extensively, you might have structures
 whose field names aren't unique.  
@@ -49,7 +49,7 @@ doing this, you'll encounter this error:
 If this is the case, roll back to your previous backup of Liferay Portal 6.2 and
 [find and remove duplicate field names](/discover/deployment/-/knowledge_base/6-2/upgrading-liferay#find-and-remove-duplicate-field-names). 
 
-## Step 4: Find and Remove Unused Objects
+## Find and Remove Unused Objects
 
 In the UI or using database queries, identify unused objects. Then remove them using Liferay's API, via Liferay's UI, the
 [script console](/discover/portal/-/knowledge_base/7-2/running-scripts-from-the-script-console),
@@ -63,7 +63,7 @@ or a portlet you create.
 
 Here are some common places to check for unused objects:
 
-### Step 4a: Objects From the Large/Populated Tables
+### Objects From the Large/Populated Tables
 
 The table records reflect @product@ objects. Tables that are large or that have
 many records might contain lots of unused objects. The greater the following
@@ -109,7 +109,7 @@ Liferay's API (e.g., the UI or
 [script console](/discover/portal/-/knowledge_base/7-2/running-scripts-from-the-script-console))
 to delete the objects. 
 
-### Step 4b: Common Object Types Worth Checking 
+### Common Object Types Worth Checking 
 
 Some object types are often worthwhile to check for unused objects. Here are some reasons for checking them:
 
@@ -190,7 +190,7 @@ Check these object types:
         portlets. These portlet instances have a different lifecycle, and
         aren't deleted when the portlet is removed from a template.
 
-## Step 5: Test @product@ with its pruned database copy
+## Test @product@ with its pruned database copy
 
 Find and resolve any issues related to the objects you removed. You can always
 restart pruning a new copy of your production database if you can't resolve an
@@ -199,17 +199,17 @@ issue.
 Once you've successfully tested @product@ with its pruned database copy, you can
 upgrade the database to @product-ver@. 
 
-## Step 6: Install @product-ver@ on a test server and configure it to use the pruned database 
+## Install @product-ver@ on a test server and configure it to use the pruned database 
 
 [Prepare a new test server with @product-ver@](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade). 
 Configure it to use the pruned database copy. You'll use the new test server's
 Liferay upgrade tool next. 
 
-## Step 7: Tune Your Database for the Upgrade 
+## Tune Your Database for the Upgrade 
 
 [Tune your database for the upgrade](/deployment/docs/-/knowledge_base/7-2/tune-your-database-for-the-upgrade). 
 
-## Step 8: Upgrade the database 
+## Upgrade the database 
 
 Upgrade the database to @product-ver@ (see
 [Upgrade the Database](/deployment/docs/-/knowledge_base/7-2/upgrade-the-database));
@@ -218,7 +218,7 @@ then return here.
 If the upgrade took too long, search the upgrade log to identify more unused
 objects. Then restart these steps with a fresh copy of the production database. 
 
-## Step 9: Test the Upgraded Portal and Resolve Any Issues 
+## Test the Upgraded Portal and Resolve Any Issues 
 
 Test this upgraded @product-ver@ instance and resolve any issues. If you can't
 resolve an issue, restart these steps with a fresh copy of the production
