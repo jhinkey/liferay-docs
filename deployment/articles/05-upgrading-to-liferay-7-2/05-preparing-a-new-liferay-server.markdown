@@ -111,12 +111,16 @@ configurations.
 
 Properties in features that have been modularized have changed and must now be
 deployed separately in
-[OSGi configuration files](/user/-/knowledge_base/7-2/system-settings#exporting-and-importing-configurations).
+[OSGi configuration files](/user/-/knowledge_base/7-2/system-settings#exporting-and-importing-configurations) 
+(OSGi Config Admin).
 
-Use `blade upgradeProps` command to scan your current portal-ext.properties and
-know which properties are now ConfigAdmin. You can also check the upgrade log
-from previous attemps looking for traces like these:
-```com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+Use the
+[`blade upgradeProps`](/docs/7-2/reference/-/knowledge_base/reference/blade-cli)
+command to scan your `portal-ext.properties` file to discover which properties
+are now set via OSGi Config Admin. You can also check the upgrade log from
+previous attemps looking for traces like these:
+
+```properties
 2019-03-09 17:05:17.678 ERROR [main][VerifyProperties:161] Portal property "layout.first.pageable[link_to_layout]" is obsolete
 2019-03-09 17:05:17.679 ERROR [main][VerifyProperties:136] Portal property "journal.article.check.interval" was modularized to com.liferay.journal.web as "check.interval"
 ```
