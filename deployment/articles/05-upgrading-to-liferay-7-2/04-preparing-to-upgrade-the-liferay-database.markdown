@@ -18,7 +18,7 @@ ready to prepare for upgrading your production database.
 Previously you identified and removed unused objects from a copy of your
 @product@ production backup. In the same way (in the script console or UI),
 remove the noted unused objects from your test database, remove them from your
-production database. 
+production database (in your original version of Liferay)
 
 ## Test @product@ with its Pruned Database 
 

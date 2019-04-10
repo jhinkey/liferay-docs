@@ -49,7 +49,7 @@ Here are the data upgrade paths:
 
 | Data Upgrade Path                              | Description                |
 | ---------------------------------------------- | -------------------------- |
-| Liferay Portal 6.0.x &rarr; Liferay Portal 6.2 | Support life ended for 6.0 |
+| Liferay Portal 5.x and 6.0.x &rarr; Liferay Portal 6.2 | Support life ended for 6.0 |
 | Liferay Portal 6.1.x &rarr; @product@ 7.1      | Support life ended for 6.1 |
 | Liferay Portal 6.2+ &rarr; @product@ 7.2       |                            |
 | @product@ 7.0+ &rarr; @product@ 7.2            |                            |
