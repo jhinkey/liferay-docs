@@ -14,14 +14,15 @@ the modules--together or separately.
 @product-ver@ bundles include the upgrade tool. If you installed @product-ver@
 manually, you can download the upgrade tool separately. 
 
-- *Liferay DXP 7.2*: Go to the
-[*Downloads* page](https://customer.liferay.com/group/customer/downloads)
-and select the *DXP 7.2* product and the *Product/Service Packs* file type. In
-the listing that appears, click *Download* for the *Liferay DXP Upgrade Client*. 
+-   *Liferay DXP 7.2*: Go to the
+    [*Downloads* page](https://customer.liferay.com/group/customer/downloads)
+    and select the *DXP 7.2* product and the *Product/Service Packs* file type.
+    In the listing that appears, click *Download* for the *Liferay DXP Upgrade
+    Client*. 
 
-- *Liferay Portal CE 7.2*: Go to the
-[*Downloads* page](https://www.liferay.com/downloads-community)
-and select *Download* for *Liferay Portal Tools for 7.2*. 
+-   *Liferay Portal CE 7.2*: Go to the
+    [*Downloads* page](https://www.liferay.com/downloads-community)
+    and select *Download* for *Liferay Portal Tools for 7.2*. 
 
 Before starting the data upgrade process, configure the upgrade tool for the
 core upgrade and specify whether the upgrade tool should upgrade non-core module
@@ -39,7 +40,7 @@ Home]/tools/portal-tools-db-upgrade-client/`:
     the upgrade requires. You might want to copy your current portal properties
     (except your database properties) into this file. Before copying your
     current properties, make sure you've
-    [updated the portal properties for @product-ver@](/deployment/docs/-/knowledge_base/7-2/preparing-to-upgrade-the-product-database). 
+    [updated the portal properties for @product-ver@](/docs/7-2/deploy/-/knowledge_base/deploy/preparing-to-upgrade-the-product-database). 
 
 Each file's properties are described next. 
 
@@ -111,12 +112,12 @@ you'd use in a `portal-ext.properties` file.
 
 Specify the following information to configure the upgrade itself: 
 
-**liferay.home:** the [Liferay home folder](/deployment/reference/-/knowledge_base/7-2/liferay-home) *(required)*
+**liferay.home:** the [Liferay home folder](/docs/7-2/deploy/-/knowledge_base/deploy/liferay-home) *(required)*
 
 **dl.store.impl:** the implementation for persisting documents to the document
 library store. This property is mandatory if you're using a `*FileSystemStore`
 implementation. If you
-[updated this property in your `portal-ext.properties`](/discover/deployment/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade),
+[updated this property in your `portal-ext.properties`](/docs/7-2/deploy/-/knowledge_base/deploy/preparing-a-new-product-server-for-data-upgrade),
 copy it here. Otherwise, set the property one of these ways:
 
     dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
@@ -198,6 +199,6 @@ If you set `autoUpgrade="false"` in a file called
 `com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config`
 and copy the file into the `[Liferay Home]/osgi/configs` folder, the upgrade
 tool opens Gogo shell after the core upgrade. In the Gogo shell, you can 
-[administer module upgrades](/deployment/docs/-/knowledge_base/7-2/gogo-shell-commands-for-module-upgrades). 
+[administer module upgrades](/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-modules-using-gogo-shell). 
 
 It's time to run the upgrade tool.  

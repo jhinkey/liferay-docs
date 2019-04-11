@@ -10,7 +10,7 @@ Now that you've successfully upgraded a copy of your @product@ database, you're
 ready to prepare for upgrading your production database. 
 
 | **Tip:** This step and
-| [preparing a new @product@ server](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade)
+| [preparing a new @product@ server](/docs/7-2/deploy/-/knowledge_base/deploy/preparing-a-new-product-server-for-data-upgrade)
 | can be done in parallel to save time. 
 
 ## Remove All Unused Objects You Identified Earlier
@@ -36,15 +36,15 @@ with the upgrade, troubleshoot any issues regarding these apps.
 ## Publish all Staged Changes to Production 
 
 If you have
-[local/remote staging enabled](/user/-/knowledge_base/7-2/enabling-staging)
+[local/remote staging enabled](/docs/7-2/user/-/knowledge_base/user/enabling-staging)
 and have content or data saved on the staged site, 
-[publish](/user/-/knowledge_base/7-2/publishing-staged-content-efficiently)
+[publish](/docs/7-2/user/-/knowledge_base/user/publishing-staged-content-efficiently)
 it to the live site. If you skip this step, you must run a full publish (or
 manually publish changes) after the upgrade, since the system won't know what
 content changed since the last publishing date.
 
 ## Synchronize a Complete @product@ Backup 
 
-[Completely back up your @product@ installation, pruned production database, and document repository](/discover/deployment/-/knowledge_base/7-1/backing-up-a-liferay-installation). 
+[Completely back up your @product@ installation, pruned production database, and document repository](/docs/7-2/deploy/-/knowledge_base/deploy/backing-up-a-liferay-installation). 
 
 It's time to prepare a new @product@ production server.  

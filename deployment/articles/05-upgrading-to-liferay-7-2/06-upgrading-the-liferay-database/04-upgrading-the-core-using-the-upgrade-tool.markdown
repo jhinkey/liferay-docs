@@ -21,7 +21,7 @@ This command prints the upgrade tool usage:
 
 This configuration prevents automatic module upgrade, but causes the upgrade
 tool to open a Gogo shell for
-[upgrading modules](/deployment/docs/-/knowledge_base/7-2gogo-shell-commands-for-module-upgrades)
+[upgrading modules](/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-modules-using-gogo-shell)
 after finishing the core upgrade. 
  
 Here are the tool's default Java parameters:

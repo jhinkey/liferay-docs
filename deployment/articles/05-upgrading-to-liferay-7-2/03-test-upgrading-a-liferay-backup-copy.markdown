@@ -17,7 +17,7 @@ upgraded server successfully you can confidently upgrade your @product@
 database. 
 
 | **Tip:** This step and
-| [preparing a new @product@ server](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade)
+| [preparing a new @product@ server](/docs/7-2/deploy/-/knowledge_base/deploy/preparing-a-new-product-server-for-data-upgrade)
 | can be done in parallel to save time. 
 
 ## Copy the Production Installation to a Test Server
@@ -29,17 +29,17 @@ your server to use a new empty database for testing data upgrades.
 ## Copy the Production Backup to the Test Database
 
 Import data from your
-[production database backup](/discover/deployment/-/knowledge_base/7-1/backing-up-a-product-installation)
+[production database backup](/docs/7-2/deploy/-/knowledge_base/deploy/backing-up-a-product-installation)
 to the new empty database. 
 
 | **Important:** Make sure to save the data import log---you'll examine it in
 | the next steps. 
 
-## Remove Duplicate Web Content Structure Field Names [](id=remove-duplicate-web-content-structure-field-names)
+## Remove Duplicate Web Content Structure Field Names
 
 If you've used Web Content Management extensively, you might have structures
 whose field names aren't unique.  
-[Find and remove any duplicate field names](/discover/deployment/-/knowledge_base/6-2/upgrading-liferay#find-and-remove-duplicate-field-names)
+[Find and remove any duplicate field names](/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-liferay#find-and-remove-duplicate-field-names)
 before upgrading. If you upgraded to Liferay Portal 6.2 previously and skipped
 doing this, you'll encounter this error: 
 
@@ -47,12 +47,12 @@ doing this, you'll encounter this error:
     com.liferay.portal.verify.VerifyException: com.liferay.dynamic.data.mapping.validator.DDMFormValidationException$MustNotDuplicateFieldName: The field name page cannot be defined more than once
  
 If this is the case, roll back to your previous backup of Liferay Portal 6.2 and
-[find and remove duplicate field names](/discover/deployment/-/knowledge_base/6-2/upgrading-liferay#find-and-remove-duplicate-field-names). 
+[find and remove duplicate field names](/docs/7-2/deploy/-/knowledge_base/deploy/upgrading-liferay#find-and-remove-duplicate-field-names). 
 
 ## Find and Remove Unused Objects
 
 In the UI or using database queries, identify unused objects. Then remove them using Liferay's API, via Liferay's UI, the
-[script console](/discover/portal/-/knowledge_base/7-2/running-scripts-from-the-script-console),
+[script console](/docs/7-2/user/-/knowledge_base/user/running-scripts-from-the-script-console),
 or a portlet you create. 
 
 | **Important**: You should only use Liferay's API because it accounts for 
@@ -106,7 +106,7 @@ Several items stand out in the example database import:
 
 Search for unused objects associated with the tables that stand out and use
 Liferay's API (e.g., the UI or
-[script console](/discover/portal/-/knowledge_base/7-2/running-scripts-from-the-script-console))
+[script console](/docs/7-2/user/-/knowledge_base/user/running-scripts-from-the-script-console))
 to delete the objects. 
 
 ### Common Object Types Worth Checking 
@@ -201,18 +201,18 @@ upgrade the database to @product-ver@.
 
 ## Install @product-ver@ on a test server and configure it to use the pruned database 
 
-[Prepare a new test server with @product-ver@](/deployment/docs/-/knowledge_base/7-2/preparing-a-new-product-server-for-data-upgrade). 
+[Prepare a new test server with @product-ver@](/docs/7-2/deploy/-/knowledge_base/deploy/preparing-a-new-product-server-for-data-upgrade). 
 Configure it to use the pruned database copy. You'll use the new test server's
 Liferay upgrade tool next. 
 
 ## Tune Your Database for the Upgrade 
 
-[Tune your database for the upgrade](/deployment/docs/-/knowledge_base/7-2/tune-your-database-for-the-upgrade). 
+[Tune your database for the upgrade](/docs/7-2/deploy/-/knowledge_base/deploy/tune-your-database-for-the-upgrade). 
 
 ## Upgrade the database 
 
 Upgrade the database to @product-ver@ (see
-[Upgrade the Database](/deployment/docs/-/knowledge_base/7-2/upgrade-the-database));
+[Upgrade the Database](/docs/7-2/deploy/-/knowledge_base/deploy/upgrade-the-database));
 then return here. 
 
 If the upgrade took too long, search the upgrade log to identify more unused

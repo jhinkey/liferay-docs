@@ -12,7 +12,8 @@ haven't already upgraded your non-core modules using the upgrade tool or if
 there are any modules you need to revisit upgrading, you can upgrade them using
 Gogo Shell. 
 
-| **Note**: [Configuring the core upgrade](/deployment/docs/-/knowledge_base/7-2/configuring-the-core-upgrade)
+| **Note**:
+| [Configuring the core upgrade](/docs/7-2/deploy/-/knowledge_base/deploy/configuring-the-data-upgrade)
 | is required before using Gogo shell commands to upgrade the core. 
 
 First explore the command usage. 
@@ -21,7 +22,7 @@ First explore the command usage.
 
 If you ran the upgrade tool and it opened Gogo shell, you're already connected.
 Otherwise, you can execute commands using the
-[Gogo Shell portlet](/developer/reference/-/knowledge_base/7-2/using-the-felix-gogo-shell).
+[Gogo Shell portlet](/docs/7-2/reference/-/knowledge_base/reference/using-the-felix-gogo-shell).
 
 Here are the commands available in the `upgrade` namespace:
 
@@ -56,7 +57,7 @@ module's verify process
 **verify:list:** lists all registered verifiers
 
 There are many useful
-[Liferay commands and standard commands available in Gogo shell](/developer/reference/-/knowledge_base/7-2/using-the-felix-gogo-shell).
+[Liferay commands and standard commands available in Gogo shell](/docs/7-2/reference/-/knowledge_base/reference/using-the-felix-gogo-shell).
 The following sections describe Liferay upgrade commands. 
 
 ## Listing module upgrade processes
@@ -98,10 +99,10 @@ steps mentally or in a text editor. Here's the upgrade step order for a
 Bookmarks Service module to be upgraded from Liferay Portal 6.2 (the module's
 database exists) to schema version `1.0.0`: 
 
-- `0.0.1` to `1.0.0-step-3`
-- `0.0.1-step-3` to `1.0.0-step-2`
-- `0.0.1-step-2` to `1.0.0-step-1`
-- `0.0.1-step-1` to `1.0.0`
+-   `0.0.1` to `1.0.0-step-3`
+-   `0.0.1-step-3` to `1.0.0-step-2`
+-   `0.0.1-step-2` to `1.0.0-step-1`
+-   `0.0.1-step-1` to `1.0.0`
 
 The overall module upgrade process starts at version `0.0.1` and finishes at version
 `1.0.0`. The first step starts on the initial version (`0.0.1`) and finishes on
@@ -190,7 +191,7 @@ plugins intended for Liferay Portal version 6.2 or earlier).
 Verify processes make sure the upgrade executed successfully. Verify processes
 in the core are automatically executed after upgrading @product@. You can also
 execute them by configuring the
-[`verify.*` portal properties](@platform-ref@/7.1-latest/propertiesdoc/portal.properties.html#Verify)
+[`verify.*` portal properties](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#Verify)
 and restarting your server.
 
 Also, some modules have verify processes. To check for available verify
