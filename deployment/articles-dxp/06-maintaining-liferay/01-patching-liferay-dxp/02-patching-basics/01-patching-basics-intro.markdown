@@ -21,6 +21,24 @@ fixes address regressions or obvious bugs and don't require you to make
 additional changes. Each fix pack contains all previous fix packs since the last
 service pack. 
 
+**Note:** *Micro* upgrade changes are optional data changes in Liferay DXP fix packs. 
+
+You can use the [upgrade
+tool](/docs/7-2/deploy/-/knowledge_base/d/upgrading-to-product-ver) to execute
+core micro upgrades whenever you want. Before using the upgrade tool to execute
+a fix pack's micro upgrade process, however, you must shut down the server,
+install the fix pack, and [back up the @product@ database, installation, and
+Document Library
+store](/docs/7-2/deploy/-/knowledge_base/d/backing-up-a-liferay-installation).
+
+To prevent module micro upgrades from running automatically, set
+`autoUpgrade="false"` in a file called
+`com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config`
+and copy the file into the `[Liferay Home]/osgi/configs` folder. You can [use
+Gogo shell to run module
+upgrades](/docs/7-2/deploy/-/knowledge_base/d/upgrading-modules-using-gogo-shell)
+whenever you want.
+
 Fixes that don't fit these requirements are considered for service packs or hot
 fixes. 
 

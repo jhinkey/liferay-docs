@@ -23,6 +23,22 @@ Here are the installation upgrade paths:
 | **Note:** Liferay Portal 6.0+ *code* can be upgraded directly to @product@ 
 | 7.2.
 
+**Note:** *Micro* upgrade changes are data changes in Liferay DXP fix packs or
+data changes in GA release for the same minor version of Liferay Portal CE
+(e.g., installing Liferay Portal CE 7.2 GA2 on a 7.2 GA1 installation). Micro
+upgrade changes are optional in Liferay DXP 7.1+ and Liferay Portal CE 7.2+.
+
+You can use the upgrade tool (discussed later) to execute core micro upgrades
+whenever you want.
+
+To prevent module micro upgrades from running automatically, set
+`autoUpgrade="false"` in a file called
+`com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config`
+and copy the file into the `[Liferay Home]/osgi/configs` folder. You can [use
+Gogo shell to run module
+upgrades](/docs/7-2/deploy/-/knowledge_base/d/upgrading-modules-using-gogo-shell)
+(discussed later) whenever you want. 
+
 Here are the upgrade steps: 
 
 | **Note:** You can 
