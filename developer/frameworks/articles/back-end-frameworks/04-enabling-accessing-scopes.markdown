@@ -23,7 +23,7 @@ For more detailed information about scoping, see
     and a `groupId` attribute of type `long` to enable scoping by Site. Using 
     [Service Builder](/docs/7-2/appdev/-/knowledge_base/a/service-builder) 
     is the simplest way to do this. For instructions on this, see 
-    [Service Builder Persistence](/docs/7-2/appdev/-/knowledge_base/a/service-builder-persistence) 
+    [Service Builder Persistence](/docs/7-2/appdev/-/knowledge_base/a/creating-a-service-builder-project) 
     and 
     [Business Logic with Service Builder](/docs/7-2/appdev/-/knowledge_base/a/business-logic-with-service-builder). 
 
@@ -99,7 +99,7 @@ scope is available in these ways:
 3.  By calling the `getScopeGroupId()` method on a 
     [`ServiceContext`](@platform-ref@/7.2-latest/javadocs/portal-kernel/com/liferay/portal/kernel/service/ServiceContext.html) 
     object. See 
-    [Understanding Service Context](/docs/7-2/appdev/-/knowledge_base/a/understanding-servicecontext)
+    [Understanding Service Context](/docs/7-2/frameworks/-/knowledge_base/f/understanding-servicecontext)
     for an example and more details. If you know your app always needs the 
     portal instance ID, use the `ServiceContext` object's `getCompanyId()` 
     method. 
@@ -127,6 +127,6 @@ ddmStructure = DDMStructureLocalServiceUtil.fetchStructure(themeDisplay.getSiteG
 
 [Service Builder](/docs/7-2/appdev/-/knowledge_base/a/service-builder)
 
-[Service Builder Persistence](/docs/7-2/appdev/-/knowledge_base/a/service-builder-persistence)
+[Service Builder Project](/docs/7-2/appdev/-/knowledge_base/a/creating-a-service-builder-project)
 
 [Business Logic with Service Builder](/docs/7-2/appdev/-/knowledge_base/a/business-logic-with-service-builder)

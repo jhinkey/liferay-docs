@@ -44,7 +44,7 @@ This automatically scopes your configuration to `SYSTEM`.
     the above snippet do:
 
     **Meta.OCD:** Registers this class as a configuration with a specific
-    id. The ID must be the fully qualified configuration class name.
+    id. **The ID must be the fully qualified configuration class name.**
 
     **Meta.AD:** Specifies [optional metadata](http://bnd.bndtools.org/chapters/210-metatype.html) 
     about the field, such as whether it's a required field or if it has
@@ -52,6 +52,9 @@ This automatically scopes your configuration to `SYSTEM`.
     a default value, the system administrator must specify a value in order for
     your application to work properly. Use the `deflt` property to specify
     a default value.
+
+    | **Note:** You can dynamically populate select field options with the 
+    | [`ConfigurationFieldsOptionProvider` interface](/docs/7-2/frameworks/-/knowledge_base/f/dynamically-populating-select-list-fields-in-the-configuration-ui)
 
     The fully-qualified name of the `Meta` class above is
     `aQute.bnd.annotation.metatype.Meta`. For more information about this class and
