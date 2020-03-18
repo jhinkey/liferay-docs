@@ -61,7 +61,7 @@ finishing the upgrade process.
 | The upgrade process continues on the server even if you lose connection to it.
 | If you lose connection, reconnect and monitor upgrade status via the log
 | (default log file is `upgrade.log`). If you're using an earlier version of
-| @product-ver@ and upgrade execution is interrupted, check your log file for
+| DXP (or Portal) and upgrade execution is interrupted, check your log file for
 | where execution stopped. 
 | 
 | -   If execution stopped during an upgrade process for Core 7.1 or higher, or 

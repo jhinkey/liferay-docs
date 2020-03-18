@@ -7,8 +7,8 @@ header-id: deprecated-apps-in-7-2-what-to-do
 [TOC levels=1-4]
 
 During the development of any software product, it's sometimes necessary to stop
-development on or remove outdated or unpopular features. @product-ver@ is no
-different. In @product-ver@, Liferay has deprecated several apps and features. 
+development on or remove outdated or unpopular features. Liferay DXP is no
+different. In DXP, Liferay has deprecated several apps and features. 
 
 There are three types of deprecated apps: 
 
@@ -30,7 +30,7 @@ There are three types of deprecated apps:
 | **Note:** For information on apps deprecated in @product@ 7.1, please see 
 | [Deprecated Apps in 7.1: What to Do](/docs/7-1/deploy/-/knowledge_base/d/deprecated-apps-in-7-1-what-to-do)
 
-Here are the apps deprecated in @product-ver@. 
+Here are the apps deprecated in Liferay DXP 7.2. 
 
 ## Foundation
 

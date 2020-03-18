@@ -6,14 +6,14 @@ header-id: migrating-from-audience-targeting-to-segmentation-and-personalization
 
 [TOC levels=1-4]
 
-@product-ver@ integrates all the Audience Targeting app's features into
+Liferay DXP integrates all the Audience Targeting app's features into
 Liferay's core as Segmentation and Personalization. This enables better
 integration with other applications and provides developers with easier access
 to Segmentation and Personalization features. Audience Targeting users must
 migrate their user segments into the new Segments application. There are three
 steps to the migration process:
 
-1.  Upgrade to @product-ver@.
+1.  Upgrade to the latest DXP version.
 
 2.  Migrate custom rules.
 

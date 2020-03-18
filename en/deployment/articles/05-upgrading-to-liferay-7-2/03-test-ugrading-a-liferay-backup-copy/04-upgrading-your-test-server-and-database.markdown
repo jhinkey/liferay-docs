@@ -8,17 +8,17 @@ header-id: upgrading-your-test-server-and-database
 
 After you've [pruned your database and tested it
 successfully](/docs/7-2/deploy/-/knowledge_base/d/pruning-the-database),
-it's ready for upgrade. Here you'll install @product-ver@ and migrate your
+it's ready for upgrade. Here you'll install the latest version of Liferay DXP and migrate your
 current installation files to it and upgrade them. Then you'll optimize your
 database for the upgrade and upgrade your data. Lastly, you'll test this
 upgraded test environment. You may run into issues that require you to start
 again with backup of your pruned database. After you're satisfied with the test
-upgrade, you can prepare for upgrading production. Start with preparing
-@product-ver@ on a test server. 
+upgrade, you can prepare for upgrading production. Start with installing
+the latest DXP version on a test server. 
 
 ## Install Liferay on a Test Server and Configure It to Use the Pruned Database 
 
-[Prepare a new test server with @product-ver@](/docs/7-2/deploy/-/knowledge_base/d/preparing-a-new-product-server-for-data-upgrade). 
+[Prepare a new test server with DXP](/docs/7-2/deploy/-/knowledge_base/d/preparing-a-new-product-server-for-data-upgrade). 
 Configure it to use the pruned database copy---keep the original backup in case
 you want to restart test upgrades on a copy of it. You'll use the new test
 server's Liferay upgrade tool next. 
@@ -29,7 +29,7 @@ server's Liferay upgrade tool next.
 
 ## Upgrade the Database 
 
-Upgrade the database to @product-ver@ (see
+Upgrade the database to the latest DXP version (see
 [Upgrade the Database](/docs/7-2/deploy/-/knowledge_base/d/upgrading-the-product-data));
 then return here. 
 
@@ -38,7 +38,7 @@ objects. Then retry these steps with a fresh copy of the production database.
 
 ## Test the Upgraded Portal and Resolve Any Issues 
 
-Test this upgraded @product-ver@ instance and resolve any issues. If you can't
+Test this upgraded DXP instance and resolve any issues. If you can't
 resolve an issue, retry these steps with a fresh copy of the production
 database. 
 

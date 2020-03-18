@@ -179,7 +179,7 @@ module's upgrade status too. The core's `servletContextName` field value is
 
 Each module has one `Release_` table record, and the value for its
 `schemaVersion` field must be `1.0.0` or greater (`1.0.0` is the initial version
-for @product-ver@ modules, except for those that were previously traditional
+for DXP modules, except for those that were previously traditional
 plugins intended for Liferay Portal version 6.2 or earlier). 
 
 ## Executing verify processes

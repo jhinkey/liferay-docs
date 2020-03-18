@@ -8,11 +8,10 @@ header-id: upgrading-a-sharded-environment
 
 Since @product@ 7.0, Liferay removed its own physical partitioning
 implementation (also known as sharding) in favor of the capabilities provided
-natively by database vendors. Upgrading a sharded installation to @product-ver@
-requires migrating it to as many non-sharded @product@ installations (servers)
+natively by database vendors. Upgrading a sharded installation to DXP
+requires migrating it to as many non-sharded installations (servers)
 as you have shards. These steps guide you through configuring the new @product@
-servers to use your formerly sharded data and upgrading the data to
-@product-ver@. 
+servers to use your formerly sharded data and upgrading the DXP data. 
 
 | **Note:** Liferay continues to support its logical partitioning capabilities 
 | (also known as
@@ -58,7 +57,7 @@ Here are the upgrade steps:
     jdbc.two.password=
     ```
 
-5.  [Prepare a @product-ver@ server](/docs/7-2/deploy/-/knowledge_base/d/preparing-a-new-product-server-for-data-upgrade)
+5.  [Prepare new DXP server](/docs/7-2/deploy/-/knowledge_base/d/preparing-a-new-product-server-for-data-upgrade)
     for each non-default shard.
 
 6.  [Upgrade the @product@ data](/docs/7-2/deploy/-/knowledge_base/d/upgrading-the-product-data)
@@ -123,4 +122,4 @@ Here are the upgrade steps:
 
 Congratulations! You have migrated off of a sharded environment to virtual
 instances on separate @product@ servers. You have also upgraded to
-@product-ver@. Your virtual instances are ready for action. 
+your new DXP version. Your virtual instances are ready for action. 

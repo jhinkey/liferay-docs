@@ -183,4 +183,4 @@ issue.
 | Make sure the images show in the upgraded Web Content articles. 
 
 Once you've successfully tested @product@ with its pruned database copy, you can
-upgrade the database to @product-ver@. 
+upgrade the database to the latest DXP version. 

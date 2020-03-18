@@ -11,7 +11,7 @@ modules. You can use text files or the tool's command line interface to
 configure your upgrade. The upgrade tool can upgrade everything---the core
 and all the modules---together or separately. 
 
-@product-ver@ bundles include the upgrade tool. If you installed @product-ver@
+Liferay DXP bundles include the upgrade tool. If you installed DXP
 manually, you can download the upgrade tool separately. 
 
 -   *Liferay DXP 7.2*: Go to the
@@ -40,13 +40,13 @@ Home]/tools/portal-tools-db-upgrade-client/`:
     the upgrade requires. You might want to copy your current portal properties
     (except your database properties) into this file. Before copying your
     current properties, make sure you've
-    [updated the portal properties for @product-ver@](/docs/7-2/deploy/-/knowledge_base/d/preparing-to-upgrade-the-product-database). 
+    [updated the portal properties](/docs/7-2/deploy/-/knowledge_base/d/preparing-to-upgrade-the-product-database). 
 
 Each file's properties are described next. 
 
 ### Configuring app-server.properties
 
-Specify the following information to configure @product-ver@'s app server: 
+Specify the following information to configure DXP's app server: 
 
 `dir:` the absolute path of the application server folder. *(required)*
 

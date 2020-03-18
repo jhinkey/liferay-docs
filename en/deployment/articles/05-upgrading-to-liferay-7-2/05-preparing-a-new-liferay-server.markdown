@@ -7,15 +7,15 @@ header-id: preparing-a-new-product-server-for-data-upgrade
 [TOC levels=1-4]
 
 To upgrade your @product@ database, prepare a new server for hosting
-@product-ver@. You'll use this server to run the database upgrade and run
-@product-ver@. Then you can run your production server while you're configuring
-a new server to host @product-ver@ exactly the way you want. 
+the new DXP version. You'll use this server to run the database upgrade and run
+DXP. Then you can run your production server while you're configuring
+a new server to host DXP exactly the way you want. 
 
 | **Note:** these steps can be done in parallel with any of the upgrade 
 | preparation steps: planning for deprecated apps, testing upgrades on a 
 | @product@ backup copy, or preparing to upgrade the @product@ database. 
 
-Get the latest fixes for @product-ver@ by requesting an upgrade patch. 
+Get the latest fixes for DXP by requesting an upgrade patch. 
 
 ## Request an Upgrade Patch from Liferay Support (Liferay DXP only)
 
@@ -48,11 +48,11 @@ folder.
 
 It is likely that you have overridden portal properties to customize your
 installation. If so, you must update the properties files (e.g.,
-`portal-setup-wizard.properties` and `portal-ext.properties`) to @product-ver@.
+`portal-setup-wizard.properties` and `portal-ext.properties`) for the new DXP version.
 For features that use OSGi Config Admin, you must convert your properties to
 OSGi configurations. As you do this, you must account for property changes in
 all versions of @product@ since your current version up to and including
-@product-ver@. Start with updating your portal properties. 
+the new version. Start with updating your portal properties. 
 
 ### Update Your Portal Properties 
 
@@ -239,4 +239,4 @@ indexReadOnly="true"
 After you complete the upgrade, re-enable indexing by removing the `.config`
 file or setting `indexReadOnly="false"`. 
 
-Your new @product-ver@ server is ready for upgrading your database. 
+Your new DXP server is ready for upgrading your database. 
