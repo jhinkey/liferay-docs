@@ -103,7 +103,7 @@ Follow these steps to update the theme's web content:
     </root>
     ```
 
-7.  @product-ver@'s updated Bootstrap requires that you replace all 
+7.  DXP's updated Bootstrap requires that you replace all 
     `span[number]` classes with the updated `col-[device-size]-[number]` syntax.
     `[device-size]` can be `xs`, `sm`, `md`, or `lg`. See Bootstrap's 
     [documentation](https://getbootstrap.com/docs/4.0/layout/grid/) for more 

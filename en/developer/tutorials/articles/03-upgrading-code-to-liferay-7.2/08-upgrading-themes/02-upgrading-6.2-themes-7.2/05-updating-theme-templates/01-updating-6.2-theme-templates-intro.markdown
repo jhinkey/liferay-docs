@@ -6,7 +6,7 @@ header-id: updating-6-2-theme-templates
 
 [TOC levels=1-4]
 
-@product@ 6.2 theme templates and @product-ver@ theme templates are essentially 
+@product@ 6.2 theme templates and DXP theme templates are essentially 
 the same. Here are the main changes:
 
 -   Velocity templates were deprecated in Liferay Portal CE 7.0 and are now 
@@ -75,6 +75,6 @@ The log warns about removed and deprecated code and suggests replacements when
 applicable. 
 
 In this section you'll learn how to update various theme templates to 
-@product-ver@. 
+the new DXP version. 
 
 <a class="go-link btn btn-primary" href="/docs/7-2/tutorials/-/knowledge_base/t/updating-6-2-portal-normal-theme-template">Let's Go<span class="icon-circle-arrow-right"></span></a>

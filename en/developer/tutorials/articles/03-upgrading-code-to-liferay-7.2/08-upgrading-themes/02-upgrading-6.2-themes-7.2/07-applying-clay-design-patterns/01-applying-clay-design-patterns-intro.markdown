@@ -6,7 +6,7 @@ header-id: applying-clay-design-patterns-to-6-2-themes
 
 [TOC levels=1-4]
 
-@product-ver@ uses [Clay](https://clayui.com/), a web implementation of 
+DXP uses [Clay](https://clayui.com/), a web implementation of 
 Liferay's [Lexicon Experience Language](https://lexicondesign.io/). The Lexicon 
 Experience Language provides styling guidelines and best practices for 
 application UIs. Clay's CSS, HTML, and JavaScript components enable developers 
@@ -91,4 +91,4 @@ Updated form markup:
 </form>
 ```
 
-The Lunar Resort theme is updated for @product-ver@! 
+The Lunar Resort theme is updated for the new DXP version! 

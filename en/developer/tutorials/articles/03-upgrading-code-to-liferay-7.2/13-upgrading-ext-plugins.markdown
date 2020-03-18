@@ -12,9 +12,9 @@ performance, or feature updates released by Liferay. When upgrading to a new
 version of @product@, you must review all changes and manually modify your Ext
 projects to merge your changes with @product@'s.
 
-During your upgrade to @product-ver@, it's highly recommended to leverage an
+During your upgrade to the new DXP version, it's highly recommended to leverage an
 extension point to customize @product@ instead of using you existing Ext plugin,
-if possible. @product-ver@ provides many extension points that let you customize
+if possible. DXP provides many extension points that let you customize
 almost every detail of @product@. If there's a way to customize what you want
 with an extension point, do it that way instead. See the
 [More Extensible, Easier to Maintain](/docs/7-1/tutorials/-/knowledge_base/t/benefits-of-liferay-7-for-liferay-6-developers#more-extensible-easier-to-maintain)

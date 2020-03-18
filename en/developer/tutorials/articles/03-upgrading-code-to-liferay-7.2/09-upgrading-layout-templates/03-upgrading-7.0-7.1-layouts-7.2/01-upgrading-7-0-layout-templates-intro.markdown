@@ -7,7 +7,7 @@ header-id: upgrading-7-0-and-7-1-layout-templates-to-7-2
 [TOC levels=1-4]
 
 If you're upgrading your @product@ 7.0 or @product@ 7.1 layout template to 
-@product-ver@, follow these steps:
+the new DXP version, follow these steps:
 
 1.  Open your layout template's `liferay-plugin-package.properties` file and 
     update the `liferay-versions` property to `7.2.0+`:

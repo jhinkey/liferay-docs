@@ -12,9 +12,9 @@ header-id: upgrading-a-struts-1-portlet
 
 Struts is a stable, widely adopted framework that implements the Model View
 Controller (MVC) design pattern. If you have a Struts portlet for previous
-versions of Liferay Portal, you can upgrade it to @product-ver@.
+versions of Liferay Portal, you can upgrade it to the new DXP version.
 
-Upgrading Struts portlets to @product-ver@ is easier than you might think.
+Upgrading Struts portlets to the new DXP version is easier than you might think.
 @product@ lets you continue working with Struts portlets as Java EE web
 applications.
 
@@ -53,7 +53,7 @@ Here's a sample Struts portlet's folder structure with file/folder descriptions:
 
 Upgrading a Struts 1 portlet involves these steps:
 
-1.  Adapt the portlet to @product-ver@'s API using the Liferay Upgrade Planner.
+1.  Adapt the portlet to DXP's API using the Liferay Upgrade Planner.
     When running the planner's *Fix Upgrade Problems* step, many of the existing
     issues are autocorrected. For remaining issues, the planner identifies code
     affected by the new API and ways to adapt it.
@@ -88,6 +88,6 @@ portlet status:
 -   Availability to users
 
 The Struts portlet is now available on your @product@ instance. The Struts
-portlet behaves just as it did on previous versions on your @product-ver@ site.
+portlet behaves just as it did on previous versions on your DXP site.
 
-Congratulations on upgrading your Struts portlet to @product-ver@!
+Congratulations on upgrading your Struts portlet to the new DXP version!

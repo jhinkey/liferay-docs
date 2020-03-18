@@ -70,7 +70,7 @@ For most cases, the `MVCCommand` mapping is the same mapping defined in the
 legacy Struts Action.
 
 Using the beginning login example once again, the `struts-action-path` mapping,
-`/login/login`, remains the same for the `MVCCommand` mapping in @product-ver@,
+`/login/login`, remains the same for the `MVCCommand` mapping in the new DXP version,
 but some of the mappings may have changed. It's best to check @product@'s source
 code to determine the correct mapping.
 

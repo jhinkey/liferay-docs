@@ -2,11 +2,11 @@
 header-id: upgrading-code-to-product-ver
 ---
 
-# Upgrading Code to @product-ver@
+# Upgrading Code
 
 [TOC levels=1-4]
 
-Upgrading to @product-ver@ involves migrating your installation and code (your
+Upgrading to the new DXP version involves migrating your installation and code (your
 custom apps) to the new version. You'll learn how to upgrade your code in this
 section.
 
@@ -143,7 +143,7 @@ Here are the code upgrade steps:
 
 6.  [Upgrade Customization Plugins](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-customization-plugins){.title}
 
-    Upgrade your customization plugins so they're deployable to @product-ver@.{.summary}
+    Upgrade your customization plugins so they're deployable to the new DXP version.{.summary}
 
     1.  [Upgrade Customization Modules](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-customization-modules){.title}
 
@@ -169,7 +169,7 @@ Here are the code upgrade steps:
 
 7.  [Upgrade Themes](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-a-theme-to-7-2){.title}
 
-    Upgrade your themes so they're deployable to @product-ver@.{.summary}
+    Upgrade your themes so they're deployable to the new DXP version.{.summary}
 
     1.  [Upgrade 6.2 Themes to 7.2](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-6-2-themes-to-7-2){.title}
 
@@ -179,7 +179,7 @@ Here are the code upgrade steps:
 
 8.  [Upgrade Layout Templates](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-a-layout-template-to-7-2){.title}
 
-    Upgrade your layout templates so they're deployable to @product-ver@.{.summary}
+    Upgrade your layout templates so they're deployable to the new DXP version.{.summary}
 
 9.  [Upgrade Frameworks & Features](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-frameworks-and-features){.title}
 
@@ -199,12 +199,12 @@ Here are the code upgrade steps:
 
     4.  [Migrate Off of Velocity Templates](/docs/7-2/tutorials/-/knowledge_base/t/migrating-off-of-velocity-templates){.title}
 
-        Velocity template usage is deprecated for @product-ver@. You should
+        Velocity template usage is deprecated for DXP. You should
         convert your template to FreeMarker.{.summary}
 
 10. [Upgrade Portlets](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-portlets){.title}
 
-    Upgrade your portlets so they're deployable to @product-ver@.{.summary}
+    Upgrade your portlets so they're deployable to the new DXP version.{.summary}
 
     1.  [Upgrade Generic Portlets](/docs/7-2/tutorials/-/knowledge_base/t/upgrading-a-genericportlet){.title}
 
@@ -227,8 +227,8 @@ Here are the code upgrade steps:
 
     Attempt to leverage an extension point instead of upgrading your Ext plugin.
     If an Ext plugin is necessary, you must review all changes between the
-    previous Liferay Portal instance you were using and @product-ver@, and then
+    previous Liferay Portal instance you were using and the new DXP version, and then
     manually modify your Ext plugin to merge your changes with @product@'s.{.summary}
 
 Once you've finished the code upgrade steps, your custom apps will be compatible
-with @product-ver@! 
+with the new DXP version! 

@@ -17,7 +17,7 @@ of the legacy Plugins SDK.
 
 Upgrading a Liferay web plugin involves these steps:
 
-1.  Adapt the plugin to @product-ver@'s API using the Liferay Upgrade Planner.
+1.  Adapt the plugin to DXP's API using the Liferay Upgrade Planner.
     When running the planner's *Fix Upgrade Problems* step, many of the existing
     issues are autocorrected. For remaining issues, the planner identifies code
     affected by the new API and ways to adapt it.
@@ -33,5 +33,5 @@ the following portlet status:
 -   WAB startup
 -   Availability to users
 
-You've upgraded and deployed your Liferay web plugin on your @product-ver@
+You've upgraded and deployed your Liferay web plugin on your the new DXP version
 instance. Great job!

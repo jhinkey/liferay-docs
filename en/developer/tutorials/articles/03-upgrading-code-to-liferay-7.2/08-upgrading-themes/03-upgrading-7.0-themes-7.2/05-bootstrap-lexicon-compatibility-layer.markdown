@@ -6,7 +6,7 @@ header-id: using-the-bootstrap-3-lexicon-css-compatibility-layer
 
 [TOC levels=1-4]
 
-By default, @product-ver@ includes Bootstrap 4 out-of-the-box. Bootstrap 4 has 
+By default, the new DXP version includes Bootstrap 4 out-of-the-box. Bootstrap 4 has 
 been completely rewritten and therefore includes some 
 [notable changes](https://getbootstrap.com/docs/4.3/migration/) 
 and 

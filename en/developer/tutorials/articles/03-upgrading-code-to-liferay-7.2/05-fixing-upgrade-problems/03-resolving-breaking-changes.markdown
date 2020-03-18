@@ -33,7 +33,7 @@ you can easily adapt your code during the upgrade process.
 
 - [@product@ 7.0 Breaking Changes](/docs/7-0/reference/-/knowledge_base/r/breaking-changes)
 - [@product@ 7.1 Breaking Changes](/docs/7-1/reference/-/knowledge_base/r/breaking-changes)
-- [@product-ver@ Breaking Changes](/docs/7-2/reference/-/knowledge_base/r/breaking-changes)
+- [@product@ 7.2 Breaking Changes](/docs/7-2/reference/-/knowledge_base/r/breaking-changes)
 
 The easiest way to resolve breaking changes is by using the
 [Liferay Upgrade Planner](/docs/7-2/reference/-/knowledge_base/r/liferay-upgrade-planner).
@@ -42,7 +42,7 @@ resolve some of them on its own.
 
 If you're resolving breaking changes manually, make sure to investigate each
 breaking change document if you're upgrading code across multiple versions. For
-example, if you're upgrading from Liferay Portal 6.2 to @product-ver@, you must
+example, if you're upgrading from Liferay Portal 6.2 to the new DXP version, you must
 resolve all the breaking changes listed in the three documents listed above.
 
 Now that you've resolved your breaking changes, you'll learn how to upgrade

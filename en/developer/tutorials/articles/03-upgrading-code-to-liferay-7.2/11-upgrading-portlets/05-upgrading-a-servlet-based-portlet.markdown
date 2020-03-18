@@ -17,7 +17,7 @@ link. When users click the link, the Liferay logo appears.
 
 Follow these steps to upgrade a servlet-based portlet: 
 
-1.  Adapt the portlet to @product-ver@'s API using the Liferay Upgrade Planner.
+1.  Adapt the portlet to DXP's API using the Liferay Upgrade Planner.
     When running the planner's *Fix Upgrade Problems* step, many of the existing
     issues are autocorrected. For remaining issues, the planner identifies code
     affected by the new API and ways to adapt it.
@@ -39,7 +39,7 @@ portal-dependency-jars=\
     json-java.jar
 ```
 
-This property is deprecated in @product-ver@ because importing and exporting
+This property is deprecated in DXP 7.2 because importing and exporting
 Java packages has replaced wholesale use of JARs. This means modules and WABs
 can import packages without concerning themselves with JARs. @product@ exports
 many third party packages for plugins to use. Best practices for using packages
@@ -59,4 +59,4 @@ following portlet status:
 The portlet is installed to Liferay's OSGi runtime and is available to users.
 
 Congratulations! You've upgraded and deployed your servlet-based portlet to
-@product-ver@. 
+the new DXP version. 

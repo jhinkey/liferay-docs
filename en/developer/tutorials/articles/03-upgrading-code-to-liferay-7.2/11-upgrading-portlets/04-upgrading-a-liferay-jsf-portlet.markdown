@@ -13,10 +13,10 @@ header-id: upgrading-a-liferay-jsf-portlet
 Liferay JSF portlets are easy to upgrade and require few changes. They interface
 with the [Liferay Faces](/docs/7-2/reference/-/knowledge_base/r/liferay-faces)
 project, which encapsulates @product@'s Java API and JavaScript code. Because
-of this, upgrading JSF portlets to @product-ver@ requires only updating
+of this, upgrading JSF portlets to the new DXP version requires only updating
 dependencies.
 
-There are two ways to find a JSF portlet's dependencies for @product-ver@:
+There are two ways to find a JSF portlet's dependencies for the new DXP version:
 
 - The [http://liferayfaces.org/](http://liferayfaces.org/) home page lets you
   look up the dependencies (Gradle or Maven) by @product@ version, JSF version,
@@ -27,7 +27,7 @@ There are two ways to find a JSF portlet's dependencies for @product-ver@:
   version, and AlloyUI and Metal component suite version. 
 
 In this article, you'll upgrade a @product@ JSF portlet's (JSF 2.2) dependencies
-to @product-ver@.
+to the new DXP version.
 
 1.  Open your Liferay JSF portlet's build file (e.g., `pom.xml`, `build.gradle`)
     to where the dependencies are configured.
@@ -84,7 +84,7 @@ to @product-ver@.
     ```
 
 Once your Liferay JSF portlet's dependencies are updated, it's deployable to
-@product-ver@! Follow the
+the new DXP version! Follow the
 [Deploying a Project](/docs/7-2/reference/-/knowledge_base/r/deploying-a-project)
 article for deployment help.
 

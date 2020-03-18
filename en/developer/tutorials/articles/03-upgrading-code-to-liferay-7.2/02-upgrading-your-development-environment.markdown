@@ -70,7 +70,7 @@ Visit these steps to begin.
 
 The bundle URL points to the @product@ version you want workspace to download.
 When initiating this step, your workspace's Bundle URL property is updated to
-the latest release of @product-ver@.
+the latest release of DXP.
 
 For more information on configuring a workspace's bundle URL, see the
 [Adding a Liferay Bundle to Liferay Workspace](/docs/7-2/reference/-/knowledge_base/r/adding-a-liferay-bundle-to-liferay-workspace)
@@ -83,7 +83,7 @@ workspace. This is used to specify dependencies associated with a specific
 release. You set the target platform, define your dependencies, and workspace
 automatically assigns the dependency versions based on the set @product@
 version. When initiating this step, your workspace's Target Platform property is
-updated to the latest release of @product-ver@.
+updated to the latest release of DXP.
 
 For more information on this, see the
 [Managing the Target Platform](/docs/7-2/reference/-/knowledge_base/r/managing-the-target-platform)

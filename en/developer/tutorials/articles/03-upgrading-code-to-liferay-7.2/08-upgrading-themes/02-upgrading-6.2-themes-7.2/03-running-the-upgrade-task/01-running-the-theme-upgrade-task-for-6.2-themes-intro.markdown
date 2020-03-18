@@ -6,11 +6,11 @@ header-id: running-the-upgrade-task-for-6-2-themes
 
 [TOC levels=1-4]
 
-You can upgrade a Liferay Portal 6.2 theme to @product-ver@, regardless of the
+You can upgrade a Liferay Portal 6.2 theme to the new DXP version, regardless of the
 development environment you use. This tutorial uses the Liferay JS Theme 
 Toolkit's Gulp `upgrade` task to automate much of the steps. Because the theme 
 was built on @product@ 6.2, the Gulp `upgrade` task must be run three times to 
-bring it up to @product-ver@. 
+bring it up to the new DXP version. 
 
 The Liferay Theme Generator is available in a few different versions. To update 
 the @product@ 6.2 theme to @product@ 7.0, you must install v8.x.x of the 
@@ -52,7 +52,7 @@ Follow these steps to take the theme through the upgrade process:
     - Suggests specific code updates
 
     The task continues upgrading CSS files, prompting you to update CSS file 
-    names. For @product-ver@, Sass files should use the `.scss` extension, and 
+    names. For the new DXP version, Sass files should use the `.scss` extension, and 
     file names for Sass partials should start with an underscore (e.g., 
     `_custom.scss`). The `upgrade` task prompts you for each CSS file to rename. 
 
@@ -72,7 +72,7 @@ Follow these steps to take the theme through the upgrade process:
 4.  You must update the theme's `liferay-theme-tasks` dependency to version 
     `9.x.x` to complete the upgrade process. Install the latest version of the 
     Liferay Theme Generator as well while you're at it, so future uses of the 
-    tool will be compatible with the @product-ver@ theme. Both commands are 
+    tool will be compatible with the new DXP theme. Both commands are 
     shown below. Run them separately:
     
     ```bash

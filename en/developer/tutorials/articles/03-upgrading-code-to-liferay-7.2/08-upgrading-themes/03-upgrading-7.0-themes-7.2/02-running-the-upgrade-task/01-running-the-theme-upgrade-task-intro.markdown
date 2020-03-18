@@ -6,10 +6,10 @@ header-id: running-the-upgrade-task-for-7-0-themes
 
 [TOC levels=1-4]
 
-You can upgrade a @product@ 7.0 theme to @product-ver@, regardless of the 
+You can upgrade a @product@ 7.0 theme to the new DXP version, regardless of the 
 development environment you use. This tutorial uses the Liferay JS Theme 
 Toolkit's Gulp `upgrade` task to automate much of the steps. The Gulp `upgrade` 
-task must be run twice to bring a @product@ 7.0 theme up to @product-ver@. 
+task must be run twice to bring a @product@ 7.0 theme up to the new DXP version. 
 
 The Liferay Theme Generator is available in a few different versions. To update 
 the @product@ 7.0 theme to @product@ 7.1, you must install v8.x.x of the 
@@ -49,7 +49,7 @@ Follow these steps to take the theme through the upgrade process:
 3.  You must update the theme's `liferay-theme-tasks` dependency to version 
     `9.x.x` to complete the upgrade process. Install the latest version of the 
     Liferay Theme Generator as well while you're at it, so future uses of the 
-    tool will be compatible with the @product-ver@ theme. Both commands are 
+    tool will be compatible with the the new DXP version theme. Both commands are 
     shown below. Run them separately:
     
     ```bash
