@@ -13,7 +13,7 @@ Installing @product@ on Wildfly 11 takes three steps:
 -   [Deploying the @product@ WAR file to your application server](#deploying-product)
 
 | **Important:** Before installing @product@, familiarize yourself with
-| [preparing for install](/docs/7-2/deploy/-/knowledge_base/d/preparing-for-install). 
+| [preparing for install](/docs/7-2/deploy/-/knowledge_base/d/preparing-for-install).
 
 Now, [download the @product@ WAR and Dependency
 JARs](/docs/7-2/deploy/-/knowledge_base/d/obtaining-product#downloading-the-liferay-war-and-dependency-jars):
@@ -26,12 +26,12 @@ Note that [*Liferay Home*](/docs/7-2/deploy/-/knowledge_base/d/liferay-home) is
 the folder containing your Wildfly server folder. After installing and deploying
 @product@, the Liferay Home folder contains the Wildfly server folder as well as
 `data`, `deploy`, `logs`, and `osgi` folders. `$WILDFLY_HOME` refers to your
-Wildfly server folder. It is usually named `wildfly-[version]`. 
+Wildfly server folder. It is usually named `wildfly-[version]`.
 
 ## Installing Dependencies
 
 @product@ depends on a driver for your database and the JARs in the Dependencies
-ZIP and OSGi Dependencies ZIP files you downloaded. Here's how to install them: 
+ZIP and OSGi Dependencies ZIP files you downloaded. Here's how to install them:
 
 1.  Create the folder `$WILDFLY_HOME/modules/com/liferay/portal/main` if it
     doesn't exist and extract the Dependencies ZIP JARs to it:
@@ -59,7 +59,7 @@ ZIP and OSGi Dependencies ZIP files you downloaded. Here's how to install them:
     [Support Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?).
 
 3.  Create the file `module.xml` in the
-    `$WILDFLY_HOME/modules/com/liferay/portal/main` folder and insert this 
+    `$WILDFLY_HOME/modules/com/liferay/portal/main` folder and insert this
     configuration:
 
     ```xml
@@ -115,7 +115,7 @@ ZIP and OSGi Dependencies ZIP files you downloaded. Here's how to install them:
     -   `com.liferay.petra.function.jar`
     -   `com.liferay.petra.io.jar`
     -   `com.liferay.petra.lang.jar`
-    -   `com.liferay.petra.memory.jar` 
+    -   `com.liferay.petra.memory.jar`
     -   `com.liferay.petra.nio.jar`
     -   `com.liferay.petra.process.jar`
     -   `com.liferay.petra.reflect.jar`
@@ -158,13 +158,13 @@ files (exploded or non-exploded). This prevents JSP hooks and Ext plugins from
 working as intended. For example, JSP hooks don't work on Wildfly running in
 managed domain mode, since @product@'s JSP override mechanism relies on the
 application server. Since JSP hooks and Ext plugins are deprecated, however, you
-may not be using them. 
+may not be using them.
 
 The command line interface is recommended for domain mode deployments.
 
 | **Note:** This does not prevent @product@ from running in a clustered
 | environment on multiple Wildfly servers. You can set up a cluster of @product@
-| instances running on Wildfly servers running in standalone mode. Please refer 
+| instances running on Wildfly servers running in standalone mode. Please refer
 | to the [@product@ clustering articles](/docs/7-2/deploy/-/knowledge_base/d/liferay-clustering)
 | for more information.
 
@@ -177,7 +177,7 @@ Configuring Wildfly to run @product@ includes these things:
 -   Removing unnecessary configurations
 
 Optionally, you can configure Wildfly to manage @product@'s data source and mail
-session. 
+session.
 
 Start with configuring Wildfly to run @product@.
 
@@ -222,12 +222,7 @@ Make the following modifications to
     </security-domain>
     ```
 
-5.  Remove the following Weld-related tags:
-
-    -   `<extension module="org.jboss.as.weld"/>`
-    -   `<subsystem xmlns="urn:jboss:domain:weld:4.0"/>`
-
-6.  Remove the welcome content code snippets:
+5.  Remove the welcome content code snippets:
 
     ```xml
     <location name="/" handler="welcome-content"/>
@@ -241,7 +236,7 @@ Make the following modifications to
     </handlers>
     ```
 
-7.  Find the `<jsp-config/>` tag and set the `development`, `source-vm`, and
+6.  Find the `<jsp-config/>` tag and set the `development`, `source-vm`, and
     `target-vm` attributes in the tag. Once finished, the tag should look like
     this:
 
@@ -262,9 +257,7 @@ Before continuing, verify the following properties have been set in the
 
 4.  The new `<security-domain>` is created.
 
-5.  Weld tags are removed.
-
-6.  Welcome content is removed.
+5.  Welcome content is removed.
 
 7.  The `<jsp-config>` tag contains its new attributes.
 
@@ -320,7 +313,7 @@ Make the following edits as applicable for your operating system:
     ```
 
 This sets the file encoding to UTF-8, prefers an IPv4 stack over IPv6, sets the
-time zone to GMT, gives the JVM 2GB of RAM, and limits Metaspace to 512MB. 
+time zone to GMT, gives the JVM 2GB of RAM, and limits Metaspace to 512MB.
 
 On JDK 11, it's recommended to add this JVM argument to display four-digit
 years.
@@ -330,8 +323,8 @@ years.
 ```
 
 After installation, tune your system (including these JVM options) for
-performance. 
-   
+performance.
+
 | **Important:** For @product@ to work properly, the application server JVM must
 | use the `GMT` time zone and `UTF-8` file encoding.
 
@@ -339,24 +332,24 @@ performance.
 | complete some additional steps. First, navigate to the
 | `$WILDFLY_HOME/modules/com/liferay/portal/main/module.xml` file and insert the
 | following dependency within the `<dependencies>` element:
-| 
+|
 |     <module name="ibm.jdk" />
-| 
+|
 | Then navigate to the
 | `$WILDFLY_HOME/modules/system/layers/base/sun/jdk/main/module.xml` file and
 | insert the following path names inside the `<paths>...</paths>` element:
-| 
+|
 |     <path name="com/sun/crypto" />
 |     <path name="com/sun/crypto/provider" />
 |     <path name="com/sun/org/apache/xml/internal/resolver" />
 |     <path name="com/sun/org/apache/xml/internal/resolver/tools" />
-| 
+|
 | The added paths resolve issues with deployment exceptions and image uploading
 | problems.
 
 **Checkpoint:**
 
-You've configured the application server's JVM settings. 
+You've configured the application server's JVM settings.
 
 1.  The file encoding, user time-zone, preferred protocol stack have been set in
     the `JAVA_OPTS` in the `standalone.conf.bat` file.
@@ -364,7 +357,7 @@ You've configured the application server's JVM settings.
 2.  The default amount of memory available has been increased.
 
 The prescribed script modifications are now complete for your @product@
-installation on Wildfly. Next you'll configure your database. 
+installation on Wildfly. Next you'll configure your database.
 
 ### Database Configuration
 
@@ -395,7 +388,7 @@ If you want Wildfly to manage your data source, follow these steps:
     ```
 
     Make sure to replace the database name (i.e., `lportal`), user name, and
-    password with the appropriate values. 
+    password with the appropriate values.
 
 1.  If you change your data source `jndi-name` to something new, change the `<default-bindings>` tag's `datasource` attribute to the new JNDI name. The initial `<default-bindings>` tag's `datasource` attribute looks like this:
 
@@ -407,7 +400,7 @@ If you want Wildfly to manage your data source, follow these steps:
     ```
 
 2.  Add your driver to the `standalone.xml` file's `<drivers>` element also
-    found within the `<datasources>` element. 
+    found within the `<datasources>` element.
 
     ```xml
     <drivers>
@@ -447,7 +440,7 @@ If you want Wildfly to manage your data source, follow these steps:
     jdbc.default.jndi.name=java:jboss/datasources/ExampleDS
     ```
 
-Now that you've configured your data source, the mail session is next. 
+Now that you've configured your data source, the mail session is next.
 
 ### Mail Configuration
 
@@ -484,7 +477,7 @@ If you want to manage your mail session with Wildfly, follow these steps:
     ```properties
     mail.session.jndi.name=java:jboss/mail/MailSession
     ```
- 
+
 Next, you'll deploy @product@ to your Wildfly app server.
 
 ## Deploying @product@
@@ -507,11 +500,11 @@ Now you're ready to deploy @product@ using the @product@ WAR file.
 
 Congratulations; you've deployed @product@ on Wildfly!
 
-| **Note:** After deploying @product@, you may see excessive warnings and log 
+| **Note:** After deploying @product@, you may see excessive warnings and log
 | messages, such as the ones below, involving `PhaseOptimizer`. These are
 | benign and can be ignored. Make sure to adjust your app server's logging level
 | or log filters to avoid excessive benign log messages.
-| 
+|
 |     May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
 |     WARNING: Skipping pass gatherExternProperties
 |     May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
