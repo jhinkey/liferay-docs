@@ -9,7 +9,7 @@ header-id: content-delivery-network
 A Content Delivery Network (CDN) is an network of servers deployed in multiple
 data centers that contain your static content. When users hit your site, that
 static content is loaded from a server with geographical proximity to the user,
-speeding up requests. 
+speeding up requests.
 
 Here, you'll first discover the perks of using a CDN and learn about general
 guidelines for using a CDN with @product@. Then, you'll configure a CDN. It's
@@ -83,9 +83,7 @@ Once you configure your CDN host, @product@ generates URLs to the static assets
 that replace the old host with your new CDN host so they are automatically
 cached and served afterwards by the CDN.
 
-To configure your CDN in the Control Panel, navigate to *Control Panel* &rarr;
-*Configuration* &rarr; *Instance Settings*. In the main configuration, there are
-three fields related to CDNs:
+To configure your CDN in the Control Panel, navigate to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Configuration*. In the *General Main Configuration* section, there are three CDN-related fields:
 
 - *CDN Host HTTP*
 - *CDN Host HTTPS*
